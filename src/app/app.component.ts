@@ -40,13 +40,13 @@ export class MyApp {
       {title: 'Home', component: HomePage, icon: 'home'},
       {title: 'Comunidade', component: ComunityPage, icon: 'people'},
       {title: 'Agendamento', component: LocalWeatherPage, icon: 'calendar'},
-      {title: 'Exames', component: LocalWeatherPage, icon: 'partly-sunny'},
+      {title: 'Exames', component: LocalWeatherPage, icon: 'list'},
       {title: 'Daily', component: LocalWeatherPage, icon: 'sunny'},
       {title: 'Clínica', component: LocalWeatherPage, icon: 'medkit'},
-      {title: 'Prêmio', component: LocalWeatherPage, icon: 'gift'},
+      {title: 'Prêmio', component: LocalWeatherPage, icon: 'trophy'},
       {title: 'Profissional', component: LocalWeatherPage, icon: 'body'},
       {title: 'Local Weather', component: LocalWeatherPage, icon: 'partly-sunny'},
-      {title: 'Carteira Digital', component: LocalWeatherPage, icon: 'partly-sunny'}
+      {title: 'Carteira Digital', component: LocalWeatherPage, icon: 'paper'}
 
     ];
   }

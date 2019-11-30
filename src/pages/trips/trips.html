@@ -5,7 +5,7 @@
         <ion-icon name="menu"></ion-icon>
       </button>
       <ion-title>
-        <strong>Home</strong> Tuberculose App
+        <strong>Home</strong> 
       </ion-title>
       <ion-buttons end>
         <button ion-button tappable (click)="presentNotifications($event)">
@@ -16,6 +16,11 @@
   </ion-header>
 
 <ion-content padding class="trips detail-bg">
+    <ion-title>
+        <div class="ion-text-center">
+          <strong>Sua Jornada</strong> 
+        </div>
+      </ion-title>
     <progress-bar [progress]="25" [color-degraded]="{'0': '#55cb00',  '15': '#55cb00', '25': '#55cb00'}"> </progress-bar>
   <!--list of trips-->
   <ion-grid>
