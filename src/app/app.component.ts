@@ -7,6 +7,8 @@ import { Keyboard } from '@ionic-native/keyboard';
 
 import { HomePage } from "../pages/home/home";
 import { LoginPage } from "../pages/login/login";
+import { ComunityPage } from "../pages/comunity/comunity";
+
 import { LocalWeatherPage } from "../pages/local-weather/local-weather";
 
 export interface MenuItem {
@@ -36,7 +38,15 @@ export class MyApp {
 
     this.appMenuItems = [
       {title: 'Home', component: HomePage, icon: 'home'},
+      {title: 'Comunidade', component: ComunityPage, icon: 'people'},
+      {title: 'Agendamento', component: LocalWeatherPage, icon: 'calendar'},
+      {title: 'Exames', component: LocalWeatherPage, icon: 'partly-sunny'},
+      {title: 'Daily', component: LocalWeatherPage, icon: 'sunny'},
+      {title: 'Clínica', component: LocalWeatherPage, icon: 'medkit'},
+      {title: 'Prêmio', component: LocalWeatherPage, icon: 'gift'},
+      {title: 'Profissional', component: LocalWeatherPage, icon: 'body'},
       {title: 'Local Weather', component: LocalWeatherPage, icon: 'partly-sunny'}
+
     ];
   }
 
