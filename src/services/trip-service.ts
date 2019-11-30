@@ -1,16 +1,23 @@
 import {Injectable} from "@angular/core";
-import {TRIPS} from "./mock-trips";
+import {TRIPS, TRIPSTWO} from "./mock-trips";
 
 @Injectable()
 export class TripService {
   private trips: any;
+  private tripsTwo: any;
+
 
   constructor() {
     this.trips = TRIPS;
+    this.tripsTwo = TRIPSTWO;
+
   }
 
   getAll() {
     return this.trips;
+  }
+  getTripsTwoAll() {
+    return this.tripsTwo;
   }
 
   getItem(id) {

@@ -45,7 +45,8 @@ export class MyApp {
       {title: 'Clínica', component: LocalWeatherPage, icon: 'medkit'},
       {title: 'Prêmio', component: LocalWeatherPage, icon: 'gift'},
       {title: 'Profissional', component: LocalWeatherPage, icon: 'body'},
-      {title: 'Local Weather', component: LocalWeatherPage, icon: 'partly-sunny'}
+      {title: 'Local Weather', component: LocalWeatherPage, icon: 'partly-sunny'},
+      {title: 'Carteira Digital', component: LocalWeatherPage, icon: 'partly-sunny'}
 
     ];
   }

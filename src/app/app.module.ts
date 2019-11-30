@@ -25,6 +25,10 @@ import {TripDetailPage} from "../pages/trip-detail/trip-detail";
 import {TripsPage} from "../pages/trips/trips";
 import {LocalWeatherPage} from "../pages/local-weather/local-weather";
 
+
+import {ProgressBarModule} from "angular-progress-bar"
+
+
 // import services
 // end import services
 // end import services
@@ -44,7 +48,8 @@ import {LocalWeatherPage} from "../pages/local-weather/local-weather";
     RegisterPage,
     SearchLocationPage,
     TripDetailPage,
-    TripsPage
+    TripsPage,
+    
   ],
   imports: [
     BrowserModule,
@@ -57,8 +62,10 @@ import {LocalWeatherPage} from "../pages/local-weather/local-weather";
     IonicStorageModule.forRoot({
       name: '__ionic3_start_theme',
         driverOrder: ['indexeddb', 'sqlite', 'websql']
-    })
+    }),
+    ProgressBarModule
   ],
+
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
