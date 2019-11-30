@@ -1,0 +1,7 @@
+{
+  "name": "tuberculoseSUS",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
