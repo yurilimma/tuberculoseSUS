@@ -4,8 +4,8 @@ import { Platform, Nav } from "ionic-angular";
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Keyboard } from '@ionic-native/keyboard';
+import { TripsPage } from "../pages/trips/trips";
 
-import { HomePage } from "../pages/home/home";
 import { LoginPage } from "../pages/login/login";
 import { ComunityPage } from "../pages/comunity/comunity";
 
@@ -37,7 +37,7 @@ export class MyApp {
     this.initializeApp();
 
     this.appMenuItems = [
-      {title: 'Home', component: HomePage, icon: 'home'},
+      {title: 'Home', component: TripsPage, icon: 'home'},
       {title: 'Comunidade', component: ComunityPage, icon: 'people'},
       {title: 'Agendamento', component: LocalWeatherPage, icon: 'calendar'},
       {title: 'Exames', component: LocalWeatherPage, icon: 'list'},
@@ -45,7 +45,7 @@ export class MyApp {
       {title: 'Clínica', component: LocalWeatherPage, icon: 'medkit'},
       {title: 'Prêmio', component: LocalWeatherPage, icon: 'trophy'},
       {title: 'Profissional', component: LocalWeatherPage, icon: 'body'},
-      {title: 'Local Weather', component: LocalWeatherPage, icon: 'partly-sunny'},
+      {title: 'Dados Pessoais', component: LocalWeatherPage, icon: 'person'},
       {title: 'Carteira Digital', component: LocalWeatherPage, icon: 'paper'}
 
     ];

@@ -13,13 +13,12 @@
             <h2 ion-text class="no-margin bold text-white">
               João Firmino
             </h2>
-            <span ion-text color="light">Customer</span>
           </ion-col>
         </ion-row>
 
         <ion-row no-padding class="other-data">
           <ion-col no-padding class="column">
-            <button ion-button icon-left small full color="light" menuClose disabled>
+            <button ion-button icon-left small full color="light" menuClose (click)="logout()" disabled>
               <ion-icon name="contact"></ion-icon>
               Editar Perfil
             </button>
