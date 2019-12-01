@@ -1,7 +1,6 @@
 import {Component} from "@angular/core";
 import {NavController, PopoverController} from "ionic-angular";
 import {TripService} from "../../services/trip-service";
-import {TripDetailPage} from "../trip-detail/trip-detail";
 import {NotificationsPage} from "../notifications/notifications";
 import {SettingsPage} from "../settings/settings";
 
@@ -25,10 +24,12 @@ export class TripsPage {
 
   }
 
-  // view trip detail
-  viewDetail(id) {
-    this.nav.push(TripDetailPage, {id: id});
+  // redirect to page
+  redirectToPage(page) {
+    this.nav.push(page.component);
+   
   }
+  
 
   // to go account page
   goToAccount() {

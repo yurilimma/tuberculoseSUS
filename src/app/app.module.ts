@@ -24,6 +24,8 @@ import {SearchLocationPage} from "../pages/search-location/search-location";
 import {TripDetailPage} from "../pages/trip-detail/trip-detail";
 import {TripsPage} from "../pages/trips/trips";
 import {LocalWeatherPage} from "../pages/local-weather/local-weather";
+import {AwardPage} from "../pages/award/award";
+
 
 
 import {ProgressBarModule} from "angular-progress-bar";
@@ -49,6 +51,7 @@ import{DailyFeelingPage} from "../pages/daily-feeling/daily-feeling";
     SearchLocationPage,
     TripDetailPage,
     TripsPage,
+    AwardPage,
     DailyFeelingPage
   ],
   imports: [
@@ -79,6 +82,7 @@ import{DailyFeelingPage} from "../pages/daily-feeling/daily-feeling";
     SearchLocationPage,
     TripDetailPage,
     TripsPage,
+    AwardPage,
     DailyFeelingPage
   ],
   providers: [

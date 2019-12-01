@@ -26,7 +26,7 @@
   <ion-grid>
     <ion-row>
       <ion-col>
-        <div class="trip card" *ngFor="let trip of trips" tappable (click)="viewDetail(trip.id)" margin-bottom>
+        <div class="trip card" *ngFor="let trip of trips" tappable (click)="redirectToPage(trip)" margin-bottom>
           <div class="background border-bottom" [ngStyle]="{'background-image': 'url(' + trip.thumb + ')'}">
             <div class="background-filter rlt">
               <div class="align-bottom" padding-left padding-right>
@@ -38,7 +38,7 @@
         </div>
       </ion-col>
       <ion-col>
-          <div class="trip card" *ngFor="let trip of tripsTwo" tappable (click)="viewDetail(trip.id)" margin-bottom>
+          <div class="trip card" *ngFor="let trip of tripsTwo" tappable (click)="redirectToPage(trip)" margin-bottom>
               <div class="background border-bottom" [ngStyle]="{'background-image': 'url(' + trip.thumb + ')'}">
                 <div class="background-filter rlt">
                   <div class="align-bottom" padding-left padding-right>

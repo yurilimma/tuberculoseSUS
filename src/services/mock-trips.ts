@@ -1,3 +1,5 @@
+import {AwardPage} from "../pages/award/award";
+
 export let TRIPS = [
   {
     id: 1,
@@ -53,7 +55,8 @@ export let TRIPS = [
     description: "From sexy Ipanema and Copacabana, to more secluded and slightly lesser-known stretches of sand, like Prainha Beach, Brazil's Rio de Janeiro is best known for its beaches. Grab your sunscreen and Brazilian bikinis and head to the sunny shores of Rio's best beaches.",
     location: "São Paulo, Brazil",
     images: [],
-    highlights: []
+    highlights: [],
+    component: AwardPage
   },
   {
     id: 4,
@@ -75,6 +78,21 @@ export let TRIPS = [
 export let TRIPSTWO = [
   {
     id: 5,
+    name: "Padrinho",
+    price_adult: 500,
+    price_child: 250,
+    time: "24h",
+    free_cancellation: 1,
+    electric_voucher: 1,
+    sub_name: "English Commentary Tour",
+    thumb: "assets/img/trip/thumb/godfather.png",
+    description: "From sexy Ipanema and Copacabana, to more secluded and slightly lesser-known stretches of sand, like Prainha Beach, Brazil's Rio de Janeiro is best known for its beaches. Grab your sunscreen and Brazilian bikinis and head to the sunny shores of Rio's best beaches.",
+    location: "Fernando de Noronha, Brazil",
+    images: [],
+    highlights: []
+  },
+  {
+    id: 6,
     name: "Comunidade",
     price_adult: 500,
     price_child: 250,
@@ -89,23 +107,8 @@ export let TRIPSTWO = [
     highlights: []
   },
   {
-    id: 6,
-    name: "Exames",
-    price_adult: 500,
-    price_child: 250,
-    time: "24h",
-    free_cancellation: 1,
-    electric_voucher: 1,
-    sub_name: "English Commentary Tour",
-    thumb: "assets/img/trip/thumb/exams.png",
-    description: "From sexy Ipanema and Copacabana, to more secluded and slightly lesser-known stretches of sand, like Prainha Beach, Brazil's Rio de Janeiro is best known for its beaches. Grab your sunscreen and Brazilian bikinis and head to the sunny shores of Rio's best beaches.",
-    location: "Fernando de Noronha, Brazil",
-    images: [],
-    highlights: []
-  },
-  {
     id: 7,
-    name: "Carteira",
+    name: "Carteira Digital",
     price_adult: 500,
     price_child: 250,
     time: "24h",
