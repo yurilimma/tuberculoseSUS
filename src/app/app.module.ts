@@ -28,6 +28,7 @@ import {ClinicPage} from "../pages/clinic/clinic";
 import {AwardPage} from "../pages/award/award";
 import {SchedulePage} from "../pages/schedule/schedule";
 import {ProfissionalPage} from "../pages/profissional/profissional";
+import {PessoalCardPage} from "../pages/pessoal-card/pessoal-card";
 
 
 
@@ -86,7 +87,9 @@ import{DailyFeelingPage} from "../pages/daily-feeling/daily-feeling";
     ClinicPage,
     AwardPage,
     SchedulePage,
-    ProfissionalPage
+    ProfissionalPage,
+    DailyFeelingPage,
+    PessoalCardPage
   ],
   imports: [
     BrowserModule,
@@ -130,7 +133,9 @@ import{DailyFeelingPage} from "../pages/daily-feeling/daily-feeling";
     ClinicPage,
     AwardPage,
     SchedulePage,
-    ProfissionalPage
+    ProfissionalPage,
+    DailyFeelingPage,
+    PessoalCardPage
   ],
   providers: [
     StatusBar,

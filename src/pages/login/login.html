@@ -11,23 +11,23 @@
     <!-- Login form -->
     <form class="list-form">
       <ion-item>
-        <ion-label floating>
-          <ion-icon name="mail" item-start class="text-primary"></ion-icon>
+        <ion-label floating style="color:black;">
+          <ion-icon name="mail" item-start class="text-primary" style="color:black;"></ion-icon>
           Carteira Nacional de Saúde
         </ion-label>
-        <ion-input type="number"></ion-input>
+        <ion-input type="number" ></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label floating>
-          <ion-icon name="lock" item-start class="text-primary"></ion-icon>
+        <ion-label floating style="color:black;">
+          <ion-icon name="lock" item-start class="text-primary" style="color:black;"></ion-icon>
           Senha
         </ion-label>
-        <ion-input type="password"></ion-input>
+        <ion-input type="password" ></ion-input>
       </ion-item>
     </form>
 
-    <p text-right ion-text color="secondary" tappable (click)="forgotPass()"><strong>Esqueceu sua Senha?</strong></p>
+    <p text-right ion-text color="secondary" tappable (click)="forgotPass()" style="color:black;"><strong>Esqueceu sua Senha?</strong></p>
 
     <div>
       <button ion-button icon-start block color="dark" tappable (click)="login()">

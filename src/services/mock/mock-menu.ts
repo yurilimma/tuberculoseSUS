@@ -4,6 +4,9 @@ import { ClinicPage } from "../../pages/clinic/clinic";
 import { AwardPage } from "../../pages/award/award";
 import { SchedulePage } from "../../pages/schedule/schedule";
 import { ProfissionalPage } from "../../pages/profissional/profissional";
+import { DailyFeelingPage } from "../../pages/daily-feeling/daily-feeling";
+import { PessoalCardPage } from "../../pages/pessoal-card/pessoal-card";
+
 
 
 
@@ -16,7 +19,8 @@ export let MENU = [
     name: "MEU DIÁRIO",
     icon: "partly-sunny",
     color: "bg-green-active",
-    line: 1
+    line: 1,
+    component: DailyFeelingPage
   },
   {
     id: 5,
@@ -63,7 +67,8 @@ export let MENU = [
     name: "Cartão",
     icon: "finger-print",
     color: "bg-blue-active",
-    line: 3
+    line: 3,
+    component: PessoalCardPage
   },
   {
     id: 8,
