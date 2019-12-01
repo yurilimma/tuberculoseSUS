@@ -10,5 +10,11 @@ export class TopicService extends CrudService {
 
   constructor() {
     super();
-  }  
+  } 
+  
+  public getByLine(line: number){
+    return this.itemList.filter((i) => {
+      return i.line == line;
+    });
+  }
 }

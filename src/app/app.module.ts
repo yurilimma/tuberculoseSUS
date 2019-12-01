@@ -52,6 +52,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 import{DailyFeelingPage} from "../pages/daily-feeling/daily-feeling";
+import { AddTopicPage } from "../pages/add-topic/add-topic";
 
 
 // import services
@@ -86,7 +87,8 @@ import{DailyFeelingPage} from "../pages/daily-feeling/daily-feeling";
     ClinicPage,
     AwardPage,
     SchedulePage,
-    ProfissionalPage
+    ProfissionalPage,
+    AddTopicPage
   ],
   imports: [
     BrowserModule,
@@ -130,7 +132,8 @@ import{DailyFeelingPage} from "../pages/daily-feeling/daily-feeling";
     ClinicPage,
     AwardPage,
     SchedulePage,
-    ProfissionalPage
+    ProfissionalPage,
+    AddTopicPage
   ],
   providers: [
     StatusBar,

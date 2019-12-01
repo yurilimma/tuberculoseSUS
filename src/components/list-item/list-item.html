@@ -1,15 +1,33 @@
-<ion-list>
-    <ion-list-header style="color:black!important">
-      Criados Recentemente
-    </ion-list-header>
-  <ion-item *ngFor="let topic of topicList" class="bg-gray item-text-wrap">
+<div class="pull-left col-lg-12 bg-blue text-center" style="
+    width: 100%;
+    font-size: 15pt;
+    padding: 5%;
+">
+      {{title}}
+  </div>
+<ion-list>    
+  <ion-item *ngFor="let topic of topicService.getByLine(line); let final = last" class="bg-gray" text-wrap>
     <ion-avatar slot="start">
       <img src="{{topic.imgSrc}}">
     </ion-avatar>
     <ion-label>
-      <h2>{{topic.title}}</h2>
-      <h3>{{topic.author}}</h3>
-      <p>{{topic.date}}</p>
+      <h2 style="color: black!important;">{{topic.title}}</h2>
+      <h3 style="color: black!important;">{{topic.author}}</h3>
+      <p>{{topic.date}} <ion-icon class="pull-right" name="search" slot="end"></ion-icon></p>      
     </ion-label>
   </ion-item>
+  <ion-item *ngIf="line != 3" class="bg-gray">
+      <ion-label style="color: black!important;">
+        <strong>Ver mais tópicos</strong>
+        <ion-icon class="pull-right" name="fastfoward" slot="end"></ion-icon>  
+      </ion-label>
+      
+    </ion-item>
+
+    <ion-item *ngIf="line == 3" class="bg-green">
+        <ion-label (click)="criarTopico()">
+          <strong>Criar novo tópico</strong>
+          <ion-icon cname="plus" lass="pull-right" slot="end"></ion-icon>  
+        </ion-label>        
+      </ion-item>
 </ion-list>

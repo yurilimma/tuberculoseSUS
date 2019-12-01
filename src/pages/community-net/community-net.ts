@@ -14,12 +14,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'community-net.html',
 })
 export class CommunityNetPage {
+  public novoTopico: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.novoTopico = navParams.get('newTopic') || null;
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CommunityNetPage');
-  }
-
+  }  
 }
