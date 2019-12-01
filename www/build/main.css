@@ -21852,6 +21852,11 @@ page-daily-feeling .daily ion-list ion-datetime {
   padding-left: 0;
 }
 
+page-godfather .godfather-icons {
+  width: 200px;
+  height: 200px;
+}
+
 page-home ion-list,
 .home ion-list {
   border-radius: 1rem;
