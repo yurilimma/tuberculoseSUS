@@ -3,6 +3,8 @@ import { ComunityPage } from "../../pages/comunity/comunity";
 import { ClinicPage } from "../../pages/clinic/clinic";
 import { AwardPage } from "../../pages/award/award";
 import { SchedulePage } from "../../pages/schedule/schedule";
+import { ProfissionalPage } from "../../pages/profissional/profissional";
+
 
 
 
@@ -68,6 +70,7 @@ export let MENU = [
     name: "Médico",
     icon: "git-network",
     color: "bg-blue-active",
-    line: 3
+    line: 3,
+    component: ProfissionalPage
   }
 ]

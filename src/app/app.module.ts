@@ -27,6 +27,8 @@ import {GodfatherPage} from "../pages/godfather/godfather";
 import {ClinicPage} from "../pages/clinic/clinic";
 import {AwardPage} from "../pages/award/award";
 import {SchedulePage} from "../pages/schedule/schedule";
+import {ProfissionalPage} from "../pages/profissional/profissional";
+
 
 
 
@@ -83,7 +85,8 @@ import{DailyFeelingPage} from "../pages/daily-feeling/daily-feeling";
     GodfatherPage,
     ClinicPage,
     AwardPage,
-    SchedulePage
+    SchedulePage,
+    ProfissionalPage
   ],
   imports: [
     BrowserModule,
@@ -126,7 +129,8 @@ import{DailyFeelingPage} from "../pages/daily-feeling/daily-feeling";
     GodfatherPage,
     ClinicPage,
     AwardPage,
-    SchedulePage
+    SchedulePage,
+    ProfissionalPage
   ],
   providers: [
     StatusBar,
