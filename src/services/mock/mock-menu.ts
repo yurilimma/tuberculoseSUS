@@ -1,3 +1,7 @@
+import {GodfatherPage} from "../../pages/godfather/godfather";
+import { ComunityPage } from "../../pages/comunity/comunity";
+
+
 export let MENU = [
   {
     id: 1,
@@ -11,7 +15,8 @@ export let MENU = [
     name: "COMUNIDADE",
     icon: "contacts",
     color: "bg-green-active",
-    line: 1
+    line: 1,
+    component: ComunityPage
   },
   {
     id: 3,
@@ -39,7 +44,8 @@ export let MENU = [
     name: "Padrinho",
     icon: "people",
     color: "bg-blue-active",
-    line: 3
+    line: 3,
+    component: GodfatherPage
   },
   {
     id: 7,

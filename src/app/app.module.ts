@@ -23,6 +23,8 @@ import {SearchLocationPage} from "../pages/search-location/search-location";
 import {TripDetailPage} from "../pages/trip-detail/trip-detail";
 import {TripsPage} from "../pages/trips/trips";
 import {LocalWeatherPage} from "../pages/local-weather/local-weather";
+import {GodfatherPage} from "../pages/godfather/godfather";
+
 
 
 import {ProgressBarModule} from "angular-progress-bar"
@@ -71,7 +73,8 @@ import{DailyFeelingPage} from "../pages/daily-feeling/daily-feeling";
     CommunityCalendarPage,
     CommunityNetPage,
     ListItemComponent,
-    TubercususFooterComponent
+    TubercususFooterComponent,
+    GodfatherPage
   ],
   imports: [
     BrowserModule,
@@ -110,7 +113,8 @@ import{DailyFeelingPage} from "../pages/daily-feeling/daily-feeling";
     CommunityCalendarPage,
     CommunityNetPage,
     ListItemComponent,
-    TubercususFooterComponent
+    TubercususFooterComponent,
+    GodfatherPage
   ],
   providers: [
     StatusBar,

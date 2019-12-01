@@ -422,31 +422,35 @@ webpackEmptyAsyncContext.id = 127;
 var map = {
 	"../pages/award/award.module": [
 		309,
-		6
+		16
 	],
 	"../pages/community-calendar/community-calendar.module": [
 		310,
-		5
+		15
 	],
 	"../pages/community-game/community-game.module": [
 		311,
-		4
+		14
 	],
 	"../pages/community-net/community-net.module": [
 		312,
-		3
+		13
 	],
 	"../pages/community-warn/community-warn.module": [
 		313,
-		2
+		12
 	],
 	"../pages/comunity/comunity.module": [
 		314,
-		1
+		11
 	],
 	"../pages/daily-feeling/daily-feeling.module": [
 		315,
-		0
+		10
+	],
+	"../pages/godfather/godfather.module": [
+		316,
+		9
 	]
 };
 function webpackAsyncContext(req) {
@@ -1044,25 +1048,27 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_trip_detail_trip_detail__ = __webpack_require__(215);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_trips_trips__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_local_weather_local_weather__ = __webpack_require__(219);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_angular_progress_bar__ = __webpack_require__(300);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_comunity_comunity__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_dashboard_button_dashboard_button__ = __webpack_require__(301);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_community_game_community_game__ = __webpack_require__(115);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_community_warn_community_warn__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_community_calendar_community_calendar__ = __webpack_require__(114);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_community_net_community_net__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_list_item_list_item__ = __webpack_require__(302);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__services_topics_service__ = __webpack_require__(220);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__components_tubercusus_footer_tubercusus_footer__ = __webpack_require__(304);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__services_game_service__ = __webpack_require__(169);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32_ionic_tooltips__ = __webpack_require__(305);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__angular_platform_browser_animations__ = __webpack_require__(307);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_godfather_godfather__ = __webpack_require__(317);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22_angular_progress_bar__ = __webpack_require__(300);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_comunity_comunity__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_dashboard_button_dashboard_button__ = __webpack_require__(301);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_community_game_community_game__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_community_warn_community_warn__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_community_calendar_community_calendar__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_community_net_community_net__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__components_list_item_list_item__ = __webpack_require__(302);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__services_topics_service__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__components_tubercusus_footer_tubercusus_footer__ = __webpack_require__(304);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__services_game_service__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33_ionic_tooltips__ = __webpack_require__(305);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__angular_platform_browser_animations__ = __webpack_require__(307);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -1121,14 +1127,15 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_17__pages_search_location_search_location__["a" /* SearchLocationPage */],
             __WEBPACK_IMPORTED_MODULE_18__pages_trip_detail_trip_detail__["a" /* TripDetailPage */],
             __WEBPACK_IMPORTED_MODULE_19__pages_trips_trips__["a" /* TripsPage */],
-            __WEBPACK_IMPORTED_MODULE_22__pages_comunity_comunity__["a" /* ComunityPage */],
-            __WEBPACK_IMPORTED_MODULE_23__components_dashboard_button_dashboard_button__["a" /* DashboardButtonComponent */],
-            __WEBPACK_IMPORTED_MODULE_24__pages_community_game_community_game__["a" /* CommunityGamePage */],
-            __WEBPACK_IMPORTED_MODULE_25__pages_community_warn_community_warn__["a" /* CommunityWarnPage */],
-            __WEBPACK_IMPORTED_MODULE_26__pages_community_calendar_community_calendar__["a" /* CommunityCalendarPage */],
-            __WEBPACK_IMPORTED_MODULE_27__pages_community_net_community_net__["a" /* CommunityNetPage */],
-            __WEBPACK_IMPORTED_MODULE_28__components_list_item_list_item__["a" /* ListItemComponent */],
-            __WEBPACK_IMPORTED_MODULE_30__components_tubercusus_footer_tubercusus_footer__["a" /* TubercususFooterComponent */]
+            __WEBPACK_IMPORTED_MODULE_23__pages_comunity_comunity__["a" /* ComunityPage */],
+            __WEBPACK_IMPORTED_MODULE_24__components_dashboard_button_dashboard_button__["a" /* DashboardButtonComponent */],
+            __WEBPACK_IMPORTED_MODULE_25__pages_community_game_community_game__["a" /* CommunityGamePage */],
+            __WEBPACK_IMPORTED_MODULE_26__pages_community_warn_community_warn__["a" /* CommunityWarnPage */],
+            __WEBPACK_IMPORTED_MODULE_27__pages_community_calendar_community_calendar__["a" /* CommunityCalendarPage */],
+            __WEBPACK_IMPORTED_MODULE_28__pages_community_net_community_net__["a" /* CommunityNetPage */],
+            __WEBPACK_IMPORTED_MODULE_29__components_list_item_list_item__["a" /* ListItemComponent */],
+            __WEBPACK_IMPORTED_MODULE_31__components_tubercusus_footer_tubercusus_footer__["a" /* TubercususFooterComponent */],
+            __WEBPACK_IMPORTED_MODULE_21__pages_godfather_godfather__["a" /* GodfatherPage */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__["a" /* BrowserModule */],
@@ -1145,16 +1152,17 @@ AppModule = __decorate([
                     { loadChildren: '../pages/community-net/community-net.module#CommunityNetPageModule', name: 'CommunityNetPage', segment: 'community-net', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/community-warn/community-warn.module#CommunityWarnPageModule', name: 'CommunityWarnPage', segment: 'community-warn', priority: 'low', defaultHistory: [] },
                     { loadChildren: '../pages/comunity/comunity.module#ComunityPageModule', name: 'ComunityPage', segment: 'comunity', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/daily-feeling/daily-feeling.module#DailyFeelingPageModule', name: 'DailyFeelingPage', segment: 'daily-feeling', priority: 'low', defaultHistory: [] }
+                    { loadChildren: '../pages/daily-feeling/daily-feeling.module#DailyFeelingPageModule', name: 'DailyFeelingPage', segment: 'daily-feeling', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/godfather/godfather.module#GodfatherPageModule', name: 'GodfatherPage', segment: 'godfather', priority: 'low', defaultHistory: [] }
                 ]
             }),
             __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["a" /* IonicStorageModule */].forRoot({
                 name: '__ionic3_start_theme',
                 driverOrder: ['indexeddb', 'sqlite', 'websql']
             }),
-            __WEBPACK_IMPORTED_MODULE_21_angular_progress_bar__["a" /* ProgressBarModule */],
-            __WEBPACK_IMPORTED_MODULE_32_ionic_tooltips__["b" /* TooltipsModule */].forRoot(),
-            __WEBPACK_IMPORTED_MODULE_33__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */]
+            __WEBPACK_IMPORTED_MODULE_22_angular_progress_bar__["a" /* ProgressBarModule */],
+            __WEBPACK_IMPORTED_MODULE_33_ionic_tooltips__["b" /* TooltipsModule */].forRoot(),
+            __WEBPACK_IMPORTED_MODULE_34__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */]
         ],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* IonicApp */]],
         entryComponents: [
@@ -1169,25 +1177,26 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_17__pages_search_location_search_location__["a" /* SearchLocationPage */],
             __WEBPACK_IMPORTED_MODULE_18__pages_trip_detail_trip_detail__["a" /* TripDetailPage */],
             __WEBPACK_IMPORTED_MODULE_19__pages_trips_trips__["a" /* TripsPage */],
-            __WEBPACK_IMPORTED_MODULE_22__pages_comunity_comunity__["a" /* ComunityPage */],
-            __WEBPACK_IMPORTED_MODULE_23__components_dashboard_button_dashboard_button__["a" /* DashboardButtonComponent */],
-            __WEBPACK_IMPORTED_MODULE_24__pages_community_game_community_game__["a" /* CommunityGamePage */],
-            __WEBPACK_IMPORTED_MODULE_25__pages_community_warn_community_warn__["a" /* CommunityWarnPage */],
-            __WEBPACK_IMPORTED_MODULE_26__pages_community_calendar_community_calendar__["a" /* CommunityCalendarPage */],
-            __WEBPACK_IMPORTED_MODULE_27__pages_community_net_community_net__["a" /* CommunityNetPage */],
-            __WEBPACK_IMPORTED_MODULE_28__components_list_item_list_item__["a" /* ListItemComponent */],
-            __WEBPACK_IMPORTED_MODULE_30__components_tubercusus_footer_tubercusus_footer__["a" /* TubercususFooterComponent */]
+            __WEBPACK_IMPORTED_MODULE_23__pages_comunity_comunity__["a" /* ComunityPage */],
+            __WEBPACK_IMPORTED_MODULE_24__components_dashboard_button_dashboard_button__["a" /* DashboardButtonComponent */],
+            __WEBPACK_IMPORTED_MODULE_25__pages_community_game_community_game__["a" /* CommunityGamePage */],
+            __WEBPACK_IMPORTED_MODULE_26__pages_community_warn_community_warn__["a" /* CommunityWarnPage */],
+            __WEBPACK_IMPORTED_MODULE_27__pages_community_calendar_community_calendar__["a" /* CommunityCalendarPage */],
+            __WEBPACK_IMPORTED_MODULE_28__pages_community_net_community_net__["a" /* CommunityNetPage */],
+            __WEBPACK_IMPORTED_MODULE_29__components_list_item_list_item__["a" /* ListItemComponent */],
+            __WEBPACK_IMPORTED_MODULE_31__components_tubercusus_footer_tubercusus_footer__["a" /* TubercususFooterComponent */],
+            __WEBPACK_IMPORTED_MODULE_21__pages_godfather_godfather__["a" /* GodfatherPage */]
         ],
         providers: [
             __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__["a" /* StatusBar */],
             __WEBPACK_IMPORTED_MODULE_6__ionic_native_splash_screen__["a" /* SplashScreen */],
             __WEBPACK_IMPORTED_MODULE_7__ionic_native_keyboard__["a" /* Keyboard */],
             __WEBPACK_IMPORTED_MODULE_9__services_weather__["a" /* WeatherProvider */],
-            __WEBPACK_IMPORTED_MODULE_32_ionic_tooltips__["a" /* TooltipController */],
+            __WEBPACK_IMPORTED_MODULE_33_ionic_tooltips__["a" /* TooltipController */],
             __WEBPACK_IMPORTED_MODULE_8__services_menu_service__["a" /* MenuService */],
             __WEBPACK_IMPORTED_MODULE_9__services_weather__["a" /* WeatherProvider */],
-            __WEBPACK_IMPORTED_MODULE_29__services_topics_service__["a" /* TopicService */],
-            __WEBPACK_IMPORTED_MODULE_31__services_game_service__["a" /* GameService */]
+            __WEBPACK_IMPORTED_MODULE_30__services_topics_service__["a" /* TopicService */],
+            __WEBPACK_IMPORTED_MODULE_32__services_game_service__["a" /* GameService */]
         ],
         schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["i" /* CUSTOM_ELEMENTS_SCHEMA */]]
     })
@@ -1233,6 +1242,10 @@ var miths = [
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MENU; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pages_godfather_godfather__ = __webpack_require__(317);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pages_comunity_comunity__ = __webpack_require__(56);
+
+
 var MENU = [
     {
         id: 1,
@@ -1246,7 +1259,8 @@ var MENU = [
         name: "COMUNIDADE",
         icon: "contacts",
         color: "bg-green-active",
-        line: 1
+        line: 1,
+        component: __WEBPACK_IMPORTED_MODULE_1__pages_comunity_comunity__["a" /* ComunityPage */]
     },
     {
         id: 3,
@@ -1274,7 +1288,8 @@ var MENU = [
         name: "Padrinho",
         icon: "people",
         color: "bg-blue-active",
-        line: 3
+        line: 3,
+        component: __WEBPACK_IMPORTED_MODULE_0__pages_godfather_godfather__["a" /* GodfatherPage */]
     },
     {
         id: 7,
@@ -1378,17 +1393,15 @@ var MyApp = (function () {
 }());
 __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */]),
-    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */])
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */]) === "function" && _a || Object)
 ], MyApp.prototype, "nav", void 0);
 MyApp = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/home/yuri/Desktop/tuberculoseSUS/src/app/app.html"*/'<ion-menu side="left" id="authenticated" [content]="content">\n  <ion-header>\n    <ion-toolbar class="user-profile">\n\n      <ion-grid>\n        <ion-row>\n          <ion-col col-4>\n              <div class="user-avatar">\n                <img src="../assets/img/avatar.jpeg">\n              </div>\n          </ion-col>\n          <ion-col padding-top col-8>\n            <h2 ion-text class="no-margin bold text-white">\n              João Firmino\n            </h2>\n          </ion-col>\n        </ion-row>\n\n        <ion-row no-padding class="other-data">\n          <ion-col no-padding class="column">\n            <button ion-button icon-left small full color="light" menuClose (click)="logout()" disabled>\n              <ion-icon name="contact"></ion-icon>\n              Editar Perfil\n            </button>\n          </ion-col>\n          <ion-col no-padding class="column">\n            <button ion-button icon-left small full color="light" menuClose (click)="logout()">\n              <ion-icon name="log-out"></ion-icon>\n              Log Out\n            </button>\n          </ion-col>\n        </ion-row>\n\n      </ion-grid>\n\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content color="primary">\n\n    <ion-list class="user-list">\n      <button ion-item menuClose class="text-1x" *ngFor="let menuItem of appMenuItems" (click)="openPage(menuItem)">\n        <ion-icon item-left [name]="menuItem.icon" color="primary"></ion-icon>\n        <span ion-text color="primary">{{menuItem.title}}</span>\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n'/*ion-inline-end:"/home/yuri/Desktop/tuberculoseSUS/src/app/app.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */],
-        __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */],
-        __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
-        __WEBPACK_IMPORTED_MODULE_4__ionic_native_keyboard__["a" /* Keyboard */]])
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_native_keyboard__["a" /* Keyboard */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_native_keyboard__["a" /* Keyboard */]) === "function" && _e || Object])
 ], MyApp);
 
+var _a, _b, _c, _d, _e;
 //# sourceMappingURL=app.component.js.map
 
 /***/ }),
@@ -1596,6 +1609,51 @@ TubercususFooterComponent = __decorate([
 
 /***/ }),
 
+/***/ 317:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GodfatherPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the GodfatherPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var GodfatherPage = (function () {
+    function GodfatherPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    GodfatherPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad GodfatherPage');
+    };
+    return GodfatherPage;
+}());
+GodfatherPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-godfather',template:/*ion-inline-start:"/home/yuri/Desktop/tuberculoseSUS/src/pages/godfather/godfather.html"*/'<!--\n  Generated template for the GodfatherPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>godfather</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/home/yuri/Desktop/tuberculoseSUS/src/pages/godfather/godfather.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+], GodfatherPage);
+
+//# sourceMappingURL=godfather.js.map
+
+/***/ }),
+
 /***/ 53:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1668,10 +1726,8 @@ MenuService = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_menu_service__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__trip_detail_trip_detail__ = __webpack_require__(215);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__notifications_notifications__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__settings_settings__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__comunity_comunity__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__notifications_notifications__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__settings_settings__ = __webpack_require__(110);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1681,8 +1737,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
 
 
 
@@ -1699,21 +1753,16 @@ var TripsPage = (function () {
         this.tripsThree = tripService.getTripsThreeAll();
     }
     // view trip detail
-    TripsPage.prototype.viewDetail = function (id) {
-        if (id == 5) {
-            this.nav.push(__WEBPACK_IMPORTED_MODULE_6__comunity_comunity__["a" /* ComunityPage */]);
-        }
-        else {
-            this.nav.push(__WEBPACK_IMPORTED_MODULE_3__trip_detail_trip_detail__["a" /* TripDetailPage */], { id: id });
-        }
+    TripsPage.prototype.viewDetail = function (viewPage) {
+        this.nav.push(viewPage.component);
     };
     // to go account page
     TripsPage.prototype.goToAccount = function () {
-        this.nav.push(__WEBPACK_IMPORTED_MODULE_5__settings_settings__["a" /* SettingsPage */]);
+        this.nav.push(__WEBPACK_IMPORTED_MODULE_4__settings_settings__["a" /* SettingsPage */]);
     };
     TripsPage.prototype.presentNotifications = function (myEvent) {
         console.log(myEvent);
-        var popover = this.popoverCtrl.create(__WEBPACK_IMPORTED_MODULE_4__notifications_notifications__["a" /* NotificationsPage */]);
+        var popover = this.popoverCtrl.create(__WEBPACK_IMPORTED_MODULE_3__notifications_notifications__["a" /* NotificationsPage */]);
         popover.present({
             ev: myEvent
         });
@@ -1722,11 +1771,12 @@ var TripsPage = (function () {
 }());
 TripsPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-trips',template:/*ion-inline-start:"/home/yuri/Desktop/tuberculoseSUS/src/pages/trips/trips.html"*/'<!-- -->\n<!-- <ion-header>\n    <ion-navbar color="primary">\n      <button ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n      <ion-title>\n        <strong>Home</strong> \n      </ion-title>\n      <ion-buttons end>\n        <button ion-button tappable (click)="presentNotifications($event)">\n          <ion-icon name="mail"></ion-icon>\n        </button>\n      </ion-buttons>\n    </ion-navbar>\n  </ion-header> -->\n\n<ion-content padding class="trips detail-bg">\n    <div class="box box-widget widget-user">\n        <!-- Add the bg color to the header using any of the bg-* classes -->\n        <div class="widget-user-header bg-aqua-active">\n          <h3 class="widget-user-username">Fulano Silva</h3>\n          <h5 class="widget-user-desc">10456 pts</h5>\n        </div>\n        <div class="widget-user-image">\n          <img class="img-circle" src="../../assets/dist/img/user1-128x128.jpg" alt="User Avatar">\n        </div>\n        <div class="box-footer">\n          <div class="col-lg-12">\n              <progress-bar [progress]="25" [color-degraded]="{\'0\': \'#55cb00\',  \'15\': \'#55cb00\', \'25\': \'#55cb00\'}"> </progress-bar>\n          </div>\n          <div class="col-lg-6 pull-left">\n            <ion-icon name="flag"></ion-icon>\n            11/2019\n          </div>\n          <div class="col-lg-6 pull-right">\n            <ion-icon name="trophy"></ion-icon>\n            04/2020\n          </div>            \n        </div>\n      </div>\n  <ion-grid>\n    <ion-row *ngFor="let trip of trips">\n      <ion-col>\n          <dashboard-button buttonLabel="{{ trip.name }}" buttonIcon="{{ trip.icon }}" color="{{ trip.color }}" (buttonClicked)="viewDetail(trip.id)"></dashboard-button>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col>\n          <dashboard-button *ngFor="let trip of tripsTwo" buttonLabel="{{ trip.name }}" buttonIcon="{{ trip.icon }}" color="{{ trip.color }}" (buttonClicked)="viewDetail(trip.id)"></dashboard-button>\n      </ion-col>\n      <ion-col>\n          <dashboard-button *ngFor="let trip of tripsThree" buttonLabel="{{ trip.name }}" buttonIcon="{{ trip.icon }}" color="{{ trip.color }}" (buttonClicked)="viewDetail(trip.id)"></dashboard-button>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n  \n</ion-content>\n'/*ion-inline-end:"/home/yuri/Desktop/tuberculoseSUS/src/pages/trips/trips.html"*/
+        selector: 'page-trips',template:/*ion-inline-start:"/home/yuri/Desktop/tuberculoseSUS/src/pages/trips/trips.html"*/'<!-- -->\n<!-- <ion-header>\n    <ion-navbar color="primary">\n      <button ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n      <ion-title>\n        <strong>Home</strong> \n      </ion-title>\n      <ion-buttons end>\n        <button ion-button tappable (click)="presentNotifications($event)">\n          <ion-icon name="mail"></ion-icon>\n        </button>\n      </ion-buttons>\n    </ion-navbar>\n  </ion-header> -->\n\n<ion-content padding class="trips detail-bg">\n    <div class="box box-widget widget-user">\n        <!-- Add the bg color to the header using any of the bg-* classes -->\n        <div class="widget-user-header bg-aqua-active">\n          <h3 class="widget-user-username">Fulano Silva</h3>\n          <h5 class="widget-user-desc">10456 pts</h5>\n        </div>\n        <div class="widget-user-image">\n          <img class="img-circle" src="../../assets/dist/img/user1-128x128.jpg" alt="User Avatar">\n        </div>\n        <div class="box-footer">\n          <div class="col-lg-12">\n              <progress-bar [progress]="25" [color-degraded]="{\'0\': \'#55cb00\',  \'15\': \'#55cb00\', \'25\': \'#55cb00\'}"> </progress-bar>\n          </div>\n          <div class="col-lg-6 pull-left">\n            <ion-icon name="flag"></ion-icon>\n            11/2019\n          </div>\n          <div class="col-lg-6 pull-right">\n            <ion-icon name="trophy"></ion-icon>\n            04/2020\n          </div>            \n        </div>\n      </div>\n  <ion-grid>\n    <ion-row *ngFor="let trip of trips">\n      <ion-col>\n          <dashboard-button buttonLabel="{{ trip.name }}" buttonIcon="{{ trip.icon }}" color="{{ trip.color }}" (buttonClicked)="viewDetail(trip)"></dashboard-button>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col>\n          <dashboard-button *ngFor="let trip of tripsTwo" buttonLabel="{{ trip.name }}" buttonIcon="{{ trip.icon }}" color="{{ trip.color }}" (buttonClicked)="viewDetail(trip)"></dashboard-button>\n      </ion-col>\n      <ion-col>\n          <dashboard-button *ngFor="let trip of tripsThree" buttonLabel="{{ trip.name }}" buttonIcon="{{ trip.icon }}" color="{{ trip.color }}" (buttonClicked)="viewDetail(trip)"></dashboard-button>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n  \n</ion-content>\n'/*ion-inline-end:"/home/yuri/Desktop/tuberculoseSUS/src/pages/trips/trips.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__services_menu_service__["a" /* MenuService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* PopoverController */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_menu_service__["a" /* MenuService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_menu_service__["a" /* MenuService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* PopoverController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* PopoverController */]) === "function" && _c || Object])
 ], TripsPage);
 
+var _a, _b, _c;
 //# sourceMappingURL=trips.js.map
 
 /***/ }),

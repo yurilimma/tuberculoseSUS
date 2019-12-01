@@ -42,15 +42,15 @@
   <ion-grid>
     <ion-row *ngFor="let trip of trips">
       <ion-col>
-          <dashboard-button buttonLabel="{{ trip.name }}" buttonIcon="{{ trip.icon }}" color="{{ trip.color }}" (buttonClicked)="viewDetail(trip.id)"></dashboard-button>
+          <dashboard-button buttonLabel="{{ trip.name }}" buttonIcon="{{ trip.icon }}" color="{{ trip.color }}" (buttonClicked)="viewDetail(trip)"></dashboard-button>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-          <dashboard-button *ngFor="let trip of tripsTwo" buttonLabel="{{ trip.name }}" buttonIcon="{{ trip.icon }}" color="{{ trip.color }}" (buttonClicked)="viewDetail(trip.id)"></dashboard-button>
+          <dashboard-button *ngFor="let trip of tripsTwo" buttonLabel="{{ trip.name }}" buttonIcon="{{ trip.icon }}" color="{{ trip.color }}" (buttonClicked)="viewDetail(trip)"></dashboard-button>
       </ion-col>
       <ion-col>
-          <dashboard-button *ngFor="let trip of tripsThree" buttonLabel="{{ trip.name }}" buttonIcon="{{ trip.icon }}" color="{{ trip.color }}" (buttonClicked)="viewDetail(trip.id)"></dashboard-button>
+          <dashboard-button *ngFor="let trip of tripsThree" buttonLabel="{{ trip.name }}" buttonIcon="{{ trip.icon }}" color="{{ trip.color }}" (buttonClicked)="viewDetail(trip)"></dashboard-button>
       </ion-col>
     </ion-row>
   </ion-grid>

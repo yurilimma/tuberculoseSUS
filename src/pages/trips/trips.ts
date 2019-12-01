@@ -24,13 +24,9 @@ export class TripsPage {
   }
 
   // view trip detail
-  viewDetail(id) {
-    if(id == 5){
-      this.nav.push(ComunityPage);
-    }
-    else{
-      this.nav.push(TripDetailPage, {id: id});
-    }    
+  viewDetail(viewPage) {
+    this.nav.push(viewPage.component);
+      
   }
 
   // to go account page
