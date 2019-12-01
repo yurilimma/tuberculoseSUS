@@ -21769,6 +21769,10 @@ page-checkout-trip .item.no-border .item-inner [item-end],
   margin: 0;
 }
 
+.ion-icon-72 {
+  font-size: 72px;
+}
+
 ion-col {
   text-align: center !important;
 }
