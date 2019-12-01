@@ -1,4 +1,4 @@
-import {NgModule} from "@angular/core";
+import {NgModule, CUSTOM_ELEMENTS_SCHEMA} from "@angular/core";
 import {IonicApp, IonicModule} from "ionic-angular";
 import {BrowserModule} from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http';
@@ -29,6 +29,10 @@ import {AwardPage} from "../pages/award/award";
 
 
 import {ProgressBarModule} from "angular-progress-bar";
+import { TooltipsModule, TooltipController } from 'ionic-tooltips';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 import{DailyFeelingPage} from "../pages/daily-feeling/daily-feeling";
 
 // import services
@@ -66,7 +70,9 @@ import{DailyFeelingPage} from "../pages/daily-feeling/daily-feeling";
       name: '__ionic3_start_theme',
         driverOrder: ['indexeddb', 'sqlite', 'websql']
     }),
-    ProgressBarModule
+    ProgressBarModule,
+    TooltipsModule.forRoot(),
+    BrowserAnimationsModule
   ],
 
   bootstrap: [IonicApp],
@@ -91,8 +97,10 @@ import{DailyFeelingPage} from "../pages/daily-feeling/daily-feeling";
     Keyboard,
     ActivityService,
     TripService,
-    WeatherProvider
-  ]
+    WeatherProvider,
+    TooltipController
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 
 export class AppModule {

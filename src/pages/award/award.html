@@ -1,18 +1,36 @@
-<!--
-  Generated template for the AwardPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
+<!-- -->
 <ion-header>
+    <ion-navbar color="primary">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>
+        <strong>Prêmios</strong> 
+      </ion-title>
+      <ion-buttons end>
+        <button ion-button tappable (click)="presentNotifications($event)">
+          <ion-icon name="mail"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content fullscreen="true" slot="fixed" >
+    
 
-  <ion-navbar>
-    <ion-title>Prêmios</ion-title>
-  </ion-navbar>
+    <div class="card">
+        <div class="header">
+          <div class="avatar">
+            <img src="../../assets/img/avatar.jpeg" alt="">
+          </div>
+          
+        </div>
+    </div>
+      <h2 ion-text class="no-margin bold text-black" style="margin-top: 250px; margin-left: 20px;">
+          João Firmino
+      </h2>
 
-</ion-header>
-
-
-<ion-content padding>
-
-</ion-content>
+      <div class="experience">
+          <img src="../../assets/img/experience.png" alt="">
+      </div>
+  </ion-content>
