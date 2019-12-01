@@ -16,7 +16,8 @@ npm-debug.log*
 node_modules/
 tmp/
 temp/
-www/
+www/build/
+
 # Preprocessors cache files
 .sourcemaps/
 .sass-cache/
