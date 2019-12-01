@@ -81,7 +81,7 @@ import { AddTopicPage } from "../pages/add-topic/add-topic";
     AwardPage,
     SchedulePage,
     ProfissionalPage,
-    AddTopicPage
+    AddTopicPage,
     DailyFeelingPage,
     PessoalCardPage
   ],
@@ -124,7 +124,7 @@ import { AddTopicPage } from "../pages/add-topic/add-topic";
     AwardPage,
     SchedulePage,
     ProfissionalPage,
-    AddTopicPage
+    AddTopicPage,
     DailyFeelingPage,
     PessoalCardPage
   ],
