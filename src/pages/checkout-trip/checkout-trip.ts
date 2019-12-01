@@ -1,6 +1,6 @@
 import {Component} from "@angular/core";
 import {NavController, LoadingController, ToastController} from "ionic-angular";
-import {TripService} from "../../services/trip-service";
+import {MenuService} from "../../services/menu-service";
 import {HomePage} from "../home/home";
 
 @Component({
@@ -17,7 +17,7 @@ export class CheckoutTripPage {
 
   public paymethods = 'creditcard';
 
-  constructor(public nav: NavController, public tripService: TripService, public loadingCtrl: LoadingController, public toastCtrl: ToastController) {
+  constructor(public nav: NavController, public tripService: MenuService, public loadingCtrl: LoadingController, public toastCtrl: ToastController) {
     // set sample data
     this.trip = tripService.getItem(1);
   }

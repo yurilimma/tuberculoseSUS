@@ -8,8 +8,7 @@ import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {Keyboard} from '@ionic-native/keyboard';
 
-import {ActivityService} from "../services/activity-service";
-import {TripService} from "../services/trip-service";
+import {MenuService} from "../services/menu-service";
 import {WeatherProvider} from "../services/weather";
 
 import {MyApp} from "./app.component";
@@ -24,16 +23,26 @@ import {SearchLocationPage} from "../pages/search-location/search-location";
 import {TripDetailPage} from "../pages/trip-detail/trip-detail";
 import {TripsPage} from "../pages/trips/trips";
 import {LocalWeatherPage} from "../pages/local-weather/local-weather";
-import {AwardPage} from "../pages/award/award";
 
 
+import {ProgressBarModule} from "angular-progress-bar"
+import { ComunityPage } from "../pages/comunity/comunity";
+import { DashboardButtonComponent } from "../components/dashboard-button/dashboard-button";
+import { CommunityGamePage } from "../pages/community-game/community-game";
+import { CommunityWarnPage } from "../pages/community-warn/community-warn";
+import { CommunityCalendarPage } from "../pages/community-calendar/community-calendar";
+import { CommunityNetPage } from "../pages/community-net/community-net";
+import { ListItemComponent } from "../components/list-item/list-item";
+import { TopicService } from "../services/topics-service";
+import { TubercususFooterComponent } from "../components/tubercusus-footer/tubercusus-footer";
+import { GameService } from "../services/game-service";
 
-import {ProgressBarModule} from "angular-progress-bar";
 import { TooltipsModule, TooltipController } from 'ionic-tooltips';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 import{DailyFeelingPage} from "../pages/daily-feeling/daily-feeling";
+
 
 // import services
 // end import services
@@ -55,8 +64,14 @@ import{DailyFeelingPage} from "../pages/daily-feeling/daily-feeling";
     SearchLocationPage,
     TripDetailPage,
     TripsPage,
-    AwardPage,
-    DailyFeelingPage
+    ComunityPage,
+    DashboardButtonComponent,
+    CommunityGamePage,
+    CommunityWarnPage,
+    CommunityCalendarPage,
+    CommunityNetPage,
+    ListItemComponent,
+    TubercususFooterComponent
   ],
   imports: [
     BrowserModule,
@@ -88,19 +103,28 @@ import{DailyFeelingPage} from "../pages/daily-feeling/daily-feeling";
     SearchLocationPage,
     TripDetailPage,
     TripsPage,
-    AwardPage,
-    DailyFeelingPage
+    ComunityPage,
+    DashboardButtonComponent,
+    CommunityGamePage,
+    CommunityWarnPage,
+    CommunityCalendarPage,
+    CommunityNetPage,
+    ListItemComponent,
+    TubercususFooterComponent
   ],
   providers: [
     StatusBar,
     SplashScreen,
     Keyboard,
-    ActivityService,
-    TripService,
     WeatherProvider,
-    TooltipController
+    TooltipController,
+    MenuService,
+    WeatherProvider,
+    TopicService,
+    GameService
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
+
 })
 
 export class AppModule {

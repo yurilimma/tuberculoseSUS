@@ -1,44 +1,54 @@
-<!-- -->
-<ion-content padding class="animated fadeIn login auth-page">
-  <div class="login-content">
+<style>
+  a {
+    color: white !important;
+  }
+</style>
 
-    <!-- Logo -->
-    <div padding-horizontal text-center class="animated fadeInDown">
-      <div class="logo"></div>
-      <h2 ion-text class="text-primary">
-        <strong>Tuberculose App</strong> Tuberculose App
-      </h2>
-    </div>
+<ion-header>
 
-    <!-- Login form -->
-    <form class="list-form">
-      <ion-item>
-        <ion-label floating>
-          <ion-icon name="mail" item-start class="text-primary"></ion-icon>
-          Carteira Nacional de Saúde
-        </ion-label>
-        <ion-input type="number"></ion-input>
-      </ion-item>
+</ion-header>
 
-      <ion-item>
-        <ion-label floating>
-          <ion-icon name="lock" item-start class="text-primary"></ion-icon>
-          Senha
-        </ion-label>
-        <ion-input type="password"></ion-input>
-      </ion-item>
-    </form>
+<ion-content padding class="detail-bg">
+  <ion-grid>
+    <ion-row>
+      <div class="pull-left" style="font-size: 2em; color:black;">
+        <p>
+          <ion-icon name="contacts" style="padding:10px"></ion-icon><strong>Comunidade</strong>
+        </p>
+      </div>
+    </ion-row>
+    <!-- <ion-row> -->
+    <ion-row>
+      <ion-col>
+        <dashboard-button buttonLabel="Rede" buttonIcon="globe" color="bg-blue" (buttonClicked)="goToForum()">
+        </dashboard-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+      <dashboard-button buttonLabel="Mito Ou Verdade?" buttonIcon="checkmark-circle-outline" color="bg-blue"
+        (buttonClicked)="goToGamefication()"></dashboard-button>
+      </ion-col>
+    </ion-row>
+    <!-- </ion-row>
+      <ion-row> -->
+    <ion-row>
+      <ion-col>
+      <dashboard-button buttonLabel="Informe-se" buttonIcon="megaphone" color="bg-blue"
+        (buttonClicked)="goToWarnings()"></dashboard-button>
 
-    <p text-right ion-text color="secondary" tappable (click)="forgotPass()"><strong>Forgot Password?</strong></p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+      <dashboard-button buttonLabel="Eventos" buttonIcon="calendar" color="bg-blue" (buttonClicked)="goToCalendar()">
+      </dashboard-button>
 
-    <div>
-      <button ion-button icon-start block color="dark" tappable (click)="login()">
-        <ion-icon name="log-in"></ion-icon>
-        Logar
-      </button>
+      </ion-col>
+    </ion-row>
+    <!-- </ion-row> -->
+  </ion-grid>
+  
+<tubercusus-footer></tubercusus-footer>
 
-    </div>
-
-
-  </div>
 </ion-content>
