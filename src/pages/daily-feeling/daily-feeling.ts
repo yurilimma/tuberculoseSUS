@@ -15,11 +15,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class DailyFeelingPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public nav: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DailyFeelingPage');
   }
 
+  daily(){
+    this.nav.setRoot(DailyFeelingPage);
+  }
 }
