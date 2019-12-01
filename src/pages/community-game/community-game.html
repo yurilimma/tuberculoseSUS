@@ -12,30 +12,41 @@
 <ion-content padding>
   <ion-slides>
 
-    <ion-slide>
-      <ion-icon name="help-circle" class="ion-icon-72"></ion-icon>
-      <h2>Welcome to the <b>ICA</b></h2>
-      <p>The <b>ionic conference app</b> is a practical preview of the ionic framework in action, and a demonstration of proper code use.</p>
-    </ion-slide>
-
-    <ion-slide>
-      <img src="./slide-2.png"/>
-      <h2>What is Ionic?</h2>
-      <p><b>Ionic Framework</b> is an open source SDK that enables developers to build high quality mobile apps with web technologies like HTML, CSS, and JavaScript.</p>
-    </ion-slide>
-
-    <ion-slide>
-      <img src="./slide-3.png"/>
-      <h2>What is Ionic Pro?</h2>
-      <p><b>Ionic Pro</b> is a powerful set of services and features built on top of Ionic Framework that brings a totally new level of app development agility to mobile dev teams.</p>
-    </ion-slide>
-
-    <ion-slide>
-      <img src="./slide-4.png"/>
-      <h2>Ready to Play?</h2>
-      <button ion-button fill="clear">Continue <ion-icon slot="end" name="arrow-forward"></ion-icon></button>
-    </ion-slide>
-
+    <ion-slide *ngFor="let question of questionList; let i = index">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+              <ion-icon name="help-circle" class="ion-icon-72"></ion-icon>
+              <p>{{ question.question }}</p>
+          </ion-col>
+        </ion-row>
+        <ion-row *ngIf="!correctQuestion[i] && !incorrectQuestion[i]">
+          <ion-col class="txt-green">
+              <ion-icon name="checkmark-circle" class="ion-icon-24" (click)="onClickTrue(question.confirmation, i)"></ion-icon>
+              <p>VERDADE</p>
+          </ion-col>
+          <ion-col class="txt-red" (click)="onClickFalse(question.confirmation, i)">
+              <ion-icon name="close-circle" class="ion-icon-24"></ion-icon>
+              <p>MENTIRA</p>
+          </ion-col>
+        </ion-row>
+        <ion-row *ngIf="correctQuestion[i]">
+          <ion-col>
+            <p>Resposta certa, você ganhou 10 pontos!</p>
+          </ion-col>
+        </ion-row>
+        <ion-row *ngIf="incorrectQuestion[i]">
+          <ion-col>
+            <p>Resposta errada, você não ganhou pontos.</p>
+          </ion-col>
+        </ion-row>
+        <ion-row *ngIf="correctQuestion[i] || incorrectQuestion[i]">
+            <ion-col>
+              <p>Deslize ver a próxima pergunta <ion-icon name="arrow-dropright"></ion-icon></p>
+            </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>    
   </ion-slides>
 </ion-content>
 
