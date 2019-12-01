@@ -12,7 +12,7 @@
 <ion-content padding>
   <ion-slides>
 
-    <ion-slide *ngFor="let question of questionList; let i = index">
+    <ion-slide *ngFor="let question of questionList; let i = index; let final = last">
       <ion-grid>
         <ion-row>
           <ion-col>
@@ -31,18 +31,23 @@
           </ion-col>
         </ion-row>
         <ion-row *ngIf="correctQuestion[i]">
-          <ion-col>
+          <ion-col class="txt-green">
             <p>Resposta certa, você ganhou 10 pontos!</p>
           </ion-col>
         </ion-row>
         <ion-row *ngIf="incorrectQuestion[i]">
-          <ion-col>
+          <ion-col class="txt-red">
             <p>Resposta errada, você não ganhou pontos.</p>
           </ion-col>
         </ion-row>
-        <ion-row *ngIf="correctQuestion[i] || incorrectQuestion[i]">
+        <ion-row *ngIf="(correctQuestion[i] || incorrectQuestion[i]) && !final">
             <ion-col>
-              <p>Deslize ver a próxima pergunta <ion-icon name="arrow-dropright"></ion-icon></p>
+              <p>Deslize para ver a próxima pergunta <ion-icon name="arrow-dropright" class="ion-icon-24"></ion-icon></p>
+            </ion-col>
+        </ion-row>
+        <ion-row *ngIf="final">
+            <ion-col>
+              <p>Essas foram as perguntas por hoje. Volte amanhã para mais!</p>
             </ion-col>
         </ion-row>
       </ion-grid>

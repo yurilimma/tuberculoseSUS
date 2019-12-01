@@ -34,12 +34,12 @@ export class CommunityGamePage {
   }
 
   onClickTrue(questionConfirmation: boolean, i: number){
-    this.correctQuestion[i] = questionConfirmation[i] == true;
+    this.correctQuestion[i] = questionConfirmation == true;
     this.incorrectQuestion[i] = !this.correctQuestion[i];
   }
 
   onClickFalse(questionConfirmation: boolean, i: number){
-    this.incorrectQuestion[i] = questionConfirmation[i] == false;
-    this.correctQuestion[i] = !this.incorrectQuestion[i];
+    this.correctQuestion[i] = questionConfirmation == false;
+    this.incorrectQuestion[i] = !this.correctQuestion[i];
   }
 }

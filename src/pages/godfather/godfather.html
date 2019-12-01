@@ -13,60 +13,61 @@
     <ion-row>
       <div class="pull-left" style="font-size: 2em; color:black;">
         <p>
-          <ion-icon name="people" style="padding:10px"></ion-icon><strong>Padrinho</strong>
+          <ion-icon name="people" style="padding:10px"></ion-icon>
+          <strong>Padrinho</strong>
+          <img class="img-sus-logo pull-right" src="../../assets/img/sus-logo.png" alt="sus-logo">
         </p>
-      </div>  
-      <div class="pull-right">
-          <img class="img-sus-logo" src="../../assets/img/sus-logo.png" alt="sus-logo">
-       </div>  
+      </div>
     </ion-row>
     <!-- </ion-row> -->
   </ion-grid>
 
-  <div class="box box-widget widget-user">
-    <!-- Add the bg color to the header using any of the bg-* classes -->
+  <!-- <div class="box box-widget widget-user">
     <div class="widget-user-header bg-aqua-active">
       <h3 class="widget-user-username">Padrinho Oliveira</h3>
     </div>
     <div class="widget-user-image">
       <img class="img-circle" src="../../assets/img/avatar.jpeg" alt="User Avatar">
     </div>
-    
-    
-    Biografia 
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </div> -->
+  <ion-grid>
+    <ion-row class="bg-aqua-active border-radius-2 margin5">
+      <ion-col>
+        <ion-label><img class="img-circle" src="../../assets/img/avatar.jpeg" alt="User Avatar"></ion-label>
+        <ion-label class="widget-user-username">Padrinho Oliveira</ion-label>        
+      </ion-col>
+    </ion-row>
+    <ion-row class="margin5">
+        <ion-col class="pull-right">
+          <p style="text-align: justify;">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+            type specimen book.
+          </p>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <ion-icon name="chatbubbles" class="godfather-icons pull-right" slot="end"></ion-icon>
+        <strong>Mensagem</strong>
+      </ion-label>
+    </ion-item>
 
-    <div class="row">
-      <div class="col-md-6">
-        <ion-icon name="chatbubbles" class="godfather-icons"></ion-icon>
-      </div>
-      <div class="col-md-6">
-        <strong style="font-size: 15pt;">Mensagem </strong>
-      </div>
-      </div>
-      <div class="row">
+    <ion-item>
+        <ion-label>
+            <ion-icon name="call" class="godfather-icons pull-right" slot="end"></ion-icon>
+            <strong>Ligar</strong>
+          </ion-label>            
+    </ion-item>
 
-      <div class="col-md-6">
-        <ion-icon name="call" class="godfather-icons"></ion-icon>
-      </div>
-      <div class="col-md-6">
-        <strong style="font-size: 15pt;">Ligar </strong>
-      </div>
-      </div>
-      <div class="row">
-
-      <div class="col-md-6">
-        <ion-checkbox color="dark" checked="true"></ion-checkbox>
-      </div>
-      <div class="col-md-6">
-        <strong style="font-size: 15pt;">Enviar Alertas </strong>
-
-      </div>
-
-    </div>
-
-  </div>
-  
-<tubercusus-footer></tubercusus-footer>
+    <ion-item>
+        <ion-toggle name="teste" slot="start" checked></ion-toggle>
+        <ion-label>Enviar Alertas</ion-label>
+    </ion-item>
+  </ion-list>
 
 </ion-content>
+
+<tubercusus-footer></tubercusus-footer>
