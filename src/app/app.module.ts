@@ -28,8 +28,8 @@ import {AwardPage} from "../pages/award/award";
 
 
 
-import {ProgressBarModule} from "angular-progress-bar"
-
+import {ProgressBarModule} from "angular-progress-bar";
+import{DailyFeelingPage} from "../pages/daily-feeling/daily-feeling";
 
 // import services
 // end import services
@@ -51,8 +51,8 @@ import {ProgressBarModule} from "angular-progress-bar"
     SearchLocationPage,
     TripDetailPage,
     TripsPage,
-    AwardPage
-    
+    AwardPage,
+    DailyFeelingPage
   ],
   imports: [
     BrowserModule,
@@ -82,7 +82,8 @@ import {ProgressBarModule} from "angular-progress-bar"
     SearchLocationPage,
     TripDetailPage,
     TripsPage,
-    AwardPage
+    AwardPage,
+    DailyFeelingPage
   ],
   providers: [
     StatusBar,

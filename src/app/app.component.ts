@@ -12,6 +12,7 @@ import { AwardPage } from "../pages/award/award";
 
 
 import { LocalWeatherPage } from "../pages/local-weather/local-weather";
+import {DailyFeelingPage} from "../pages/daily-feeling/daily-feeling";
 
 export interface MenuItem {
     title: string;
@@ -47,8 +48,8 @@ export class MyApp {
       {title: 'Agendamento', component: LocalWeatherPage, icon: 'calendar'},
       {title: 'Clínica', component: LocalWeatherPage, icon: 'medkit'},
       {title: 'Profissional', component: LocalWeatherPage, icon: 'body'},
-      {title: 'Carteira Digital', component: LocalWeatherPage, icon: 'paper'}
-
+      {title: 'Carteira Digital', component: LocalWeatherPage, icon: 'paper'},
+      {title: 'Daily', component: DailyFeelingPage, icon: 'calendar'}
     ];
   }
 

@@ -3,7 +3,7 @@ import {NavController, AlertController, ToastController, MenuController} from "i
 import {TripsPage} from "../trips/trips";
 
 import {RegisterPage} from "../register/register";
-
+import {DailyFeelingPage} from "../daily-feeling/daily-feeling";
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html'
@@ -61,5 +61,7 @@ export class LoginPage {
     });
     forgot.present();
   }
-
+  daily(){
+    this.nav.push(DailyFeelingPage);
+  }
 }

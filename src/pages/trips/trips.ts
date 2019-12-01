@@ -27,6 +27,7 @@ export class TripsPage {
   // redirect to page
   redirectToPage(page) {
     this.nav.push(page.component);
+   
   }
   
 

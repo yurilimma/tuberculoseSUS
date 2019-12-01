@@ -21721,6 +21721,21 @@ page-checkout-trip .item.no-border .item-inner [item-end],
   margin: 0;
 }
 
+page-daily-feeling .daily ion-list {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+page-daily-feeling .daily ion-list ion-item,
+page-daily-feeling .daily ion-list .item:first-child,
+page-daily-feeling .daily ion-list .item:last-child {
+  border: none;
+}
+
+page-daily-feeling .daily ion-list ion-datetime {
+  padding-left: 0;
+}
+
 page-home ion-list,
 .home ion-list {
   border-radius: 1rem;
