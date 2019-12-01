@@ -1,5 +1,5 @@
 <!-- -->
-<ion-header>
+<!-- <ion-header>
     <ion-navbar color="primary">
       <button ion-button menuToggle>
         <ion-icon name="menu"></ion-icon>
@@ -13,41 +13,44 @@
         </button>
       </ion-buttons>
     </ion-navbar>
-  </ion-header>
+  </ion-header> -->
 
 <ion-content padding class="trips detail-bg">
-    <ion-title>
-        <div class="ion-text-center">
-          <strong>Sua Jornada</strong> 
+    <div class="box box-widget widget-user">
+        <!-- Add the bg color to the header using any of the bg-* classes -->
+        <div class="widget-user-header bg-aqua-active">
+          <h3 class="widget-user-username">Fulano Silva</h3>
+          <h5 class="widget-user-desc">10456 pts</h5>
         </div>
-      </ion-title>
-    <progress-bar [progress]="25" [color-degraded]="{'0': '#55cb00',  '15': '#55cb00', '25': '#55cb00'}"> </progress-bar>
-  <!--list of trips-->
+        <div class="widget-user-image">
+          <img class="img-circle" src="../../assets/dist/img/user1-128x128.jpg" alt="User Avatar">
+        </div>
+        <div class="box-footer">
+          <div class="col-lg-12">
+              <progress-bar [progress]="25" [color-degraded]="{'0': '#55cb00',  '15': '#55cb00', '25': '#55cb00'}"> </progress-bar>
+          </div>
+          <div class="col-lg-6 pull-left">
+            <ion-icon name="flag"></ion-icon>
+            11/2019
+          </div>
+          <div class="col-lg-6 pull-right">
+            <ion-icon name="trophy"></ion-icon>
+            04/2020
+          </div>            
+        </div>
+      </div>
   <ion-grid>
+    <ion-row *ngFor="let trip of trips">
+      <ion-col>
+          <dashboard-button buttonLabel="{{ trip.name }}" buttonIcon="{{ trip.icon }}" color="{{ trip.color }}" (buttonClicked)="viewDetail(trip.id)"></dashboard-button>
+      </ion-col>
+    </ion-row>
     <ion-row>
       <ion-col>
-        <div class="trip card" *ngFor="let trip of trips" tappable (click)="viewDetail(trip.id)" margin-bottom>
-          <div class="background border-bottom" [ngStyle]="{'background-image': 'url(' + trip.thumb + ')'}">
-            <div class="background-filter rlt">
-              <div class="align-bottom" padding-left padding-right>
-                <h6 class="pull-left text-white" ion-text>{{ trip.name }}</h6>
-                <div class="clear"></div>
-              </div>
-            </div>
-          </div>
-        </div>
+          <dashboard-button *ngFor="let trip of tripsTwo" buttonLabel="{{ trip.name }}" buttonIcon="{{ trip.icon }}" color="{{ trip.color }}" (buttonClicked)="viewDetail(trip.id)"></dashboard-button>
       </ion-col>
       <ion-col>
-          <div class="trip card" *ngFor="let trip of tripsTwo" tappable (click)="viewDetail(trip.id)" margin-bottom>
-              <div class="background border-bottom" [ngStyle]="{'background-image': 'url(' + trip.thumb + ')'}">
-                <div class="background-filter rlt">
-                  <div class="align-bottom" padding-left padding-right>
-                    <h6 class="pull-left text-white" ion-text>{{ trip.name }}</h6>
-                    <div class="clear"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <dashboard-button *ngFor="let trip of tripsThree" buttonLabel="{{ trip.name }}" buttonIcon="{{ trip.icon }}" color="{{ trip.color }}" (buttonClicked)="viewDetail(trip.id)"></dashboard-button>
       </ion-col>
     </ion-row>
   </ion-grid>

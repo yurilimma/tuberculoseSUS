@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-navbar color="primary">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>
+        <strong>Rede</strong> 
+      </ion-title>
+      <ion-buttons end>
+        <button ion-button tappable (click)="presentNotifications($event)">
+          <ion-icon name="mail"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+</ion-header>
+  
+<ion-content padding class="detail-bg">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <dashboard-button buttonLabel="Novo Tópico" buttonIcon="add" color="bg-green"></dashboard-button>
+      </ion-col>
+    </ion-row>
+    <list-item></list-item>
+  </ion-grid>
+</ion-content>

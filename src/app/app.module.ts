@@ -27,6 +27,14 @@ import {LocalWeatherPage} from "../pages/local-weather/local-weather";
 
 
 import {ProgressBarModule} from "angular-progress-bar"
+import { ComunityPage } from "../pages/comunity/comunity";
+import { DashboardButtonComponent } from "../components/dashboard-button/dashboard-button";
+import { CommunityGamePage } from "../pages/community-game/community-game";
+import { CommunityWarnPage } from "../pages/community-warn/community-warn";
+import { CommunityCalendarPage } from "../pages/community-calendar/community-calendar";
+import { CommunityNetPage } from "../pages/community-net/community-net";
+import { ListItemComponent } from "../components/list-item/list-item";
+import { TopicService } from "../services/topics-service";
 
 
 // import services
@@ -49,7 +57,13 @@ import {ProgressBarModule} from "angular-progress-bar"
     SearchLocationPage,
     TripDetailPage,
     TripsPage,
-    
+    ComunityPage,
+    DashboardButtonComponent,
+    CommunityGamePage,
+    CommunityWarnPage,
+    CommunityCalendarPage,
+    CommunityNetPage,
+    ListItemComponent
   ],
   imports: [
     BrowserModule,
@@ -78,7 +92,14 @@ import {ProgressBarModule} from "angular-progress-bar"
     RegisterPage,
     SearchLocationPage,
     TripDetailPage,
-    TripsPage
+    TripsPage,
+    ComunityPage,
+    DashboardButtonComponent,
+    CommunityGamePage,
+    CommunityWarnPage,
+    CommunityCalendarPage,
+    CommunityNetPage,
+    ListItemComponent
   ],
   providers: [
     StatusBar,
@@ -86,7 +107,8 @@ import {ProgressBarModule} from "angular-progress-bar"
     Keyboard,
     ActivityService,
     TripService,
-    WeatherProvider
+    WeatherProvider,
+    TopicService
   ]
 })
 

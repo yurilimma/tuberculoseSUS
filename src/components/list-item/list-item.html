@@ -1,0 +1,15 @@
+<ion-list>
+    <ion-list-header style="color:black!important">
+      Criados Recentemente
+    </ion-list-header>
+  <ion-item *ngFor="let topic of topicList" class="bg-gray">
+    <ion-avatar slot="start">
+      <img src="{{topic.imgSrc}}">
+    </ion-avatar>
+    <ion-label>
+      <h2>{{topic.title}}</h2>
+      <h3>{{topic.author}}</h3>
+      <p>{{topic.date}}</p>
+    </ion-label>
+  </ion-item>
+</ion-list>

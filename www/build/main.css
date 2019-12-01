@@ -1,3 +1,9 @@
+@import url("../assets/bower_components/bootstrap/dist/css/bootstrap.min.css");
+@import url("../assets/bower_components/font-awesome/css/font-awesome.min.css");
+@import url("../assets/bower_components/Ionicons/css/ionicons.min.css");
+@import url("../assets/bower_components/jvectormap/jquery-jvectormap.css");
+@import url("../assets/dist/css/AdminLTE.min.css");
+@import url("../assets/dist/css/skins/_all-skins.min.css");
 .ion-ios-add:before {
   content: "\f102";
 }
@@ -21168,6 +21174,11 @@ ion-navbar.toolbar {
   min-height: calc(56px + env(safe-area-inset-bottom));
 }
 
+* {
+  font-size: 100%;
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
+}
+
 .primary-bg {
   background-color: #4c6df9 !important;
 }
@@ -21696,6 +21707,35 @@ ion-icon[ng-reflect-disabled="true"] {
   animation-name: fadeInDown;
 }
 
+.button-div {
+  text-align: center !important;
+  border-radius: 10px !important;
+  padding: 5px !important;
+  margin: 3% !important;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.ion-icon-64 {
+  font-size: 64px !important;
+}
+
+.align-text-middle {
+  display: block !important;
+  -webkit-box-align: center !important;
+  -webkit-align-items: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+
+ion-item {
+  color: black !important;
+}
+
+ion-label {
+  text-align: left !important;
+}
+
 page-checkout-trip .trip-info .trip-image,
 .checkout-trip .trip-info .trip-image {
   width: 100%;
@@ -21719,6 +21759,22 @@ page-checkout-trip .item.no-border .item-inner,
 page-checkout-trip .item.no-border .item-inner [item-end],
 .checkout-trip .item.no-border .item-inner [item-end] {
   margin: 0;
+}
+
+ion-col {
+  text-align: center !important;
+}
+
+.align-text-middle {
+  display: block !important;
+  -webkit-box-align: center !important;
+  -webkit-align-items: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+
+a {
+  color: white !important;
 }
 
 page-home ion-list,

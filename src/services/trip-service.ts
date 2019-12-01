@@ -1,15 +1,16 @@
 import {Injectable} from "@angular/core";
-import {TRIPS, TRIPSTWO} from "./mock-trips";
+import {TRIPS, TRIPSTWO, TRIPSTHREE} from "./mock-trips";
 
 @Injectable()
 export class TripService {
   private trips: any;
   private tripsTwo: any;
-
+  private tripsThree: any;
 
   constructor() {
     this.trips = TRIPS;
     this.tripsTwo = TRIPSTWO;
+    this.tripsThree = TRIPSTHREE;
 
   }
 
@@ -18,6 +19,9 @@ export class TripService {
   }
   getTripsTwoAll() {
     return this.tripsTwo;
+  }
+  getTripsThreeAll() {
+    return this.tripsThree;
   }
 
   getItem(id) {
