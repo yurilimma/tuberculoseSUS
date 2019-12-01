@@ -367,25 +367,33 @@ webpackEmptyAsyncContext.id = 122;
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
+	"../pages/award/award.module": [
+		304,
+		13
+	],
 	"../pages/community-calendar/community-calendar.module": [
 		297,
-		4
+		12
 	],
 	"../pages/community-game/community-game.module": [
 		298,
-		3
+		11
 	],
 	"../pages/community-net/community-net.module": [
 		299,
-		2
+		10
 	],
 	"../pages/community-warn/community-warn.module": [
 		300,
-		1
+		9
 	],
 	"../pages/comunity/comunity.module": [
 		301,
-		0
+		8
+	],
+	"../pages/daily-feeling/daily-feeling.module": [
+		305,
+		7
 	]
 };
 function webpackAsyncContext(req) {
@@ -977,7 +985,9 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/community-game/community-game.module#CommunityGamePageModule', name: 'CommunityGamePage', segment: 'community-game', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/community-net/community-net.module#CommunityNetPageModule', name: 'CommunityNetPage', segment: 'community-net', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/community-warn/community-warn.module#CommunityWarnPageModule', name: 'CommunityWarnPage', segment: 'community-warn', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/comunity/comunity.module#ComunityPageModule', name: 'ComunityPage', segment: 'comunity', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/comunity/comunity.module#ComunityPageModule', name: 'ComunityPage', segment: 'comunity', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/award/award.module#AwardPageModule', name: 'AwardPage', segment: 'award', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/daily-feeling/daily-feeling.module#DailyFeelingPageModule', name: 'DailyFeelingPage', segment: 'daily-feeling', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["a" /* IonicStorageModule */].forRoot({
@@ -1126,20 +1136,20 @@ var TRIPSTWO = [
 var TRIPSTHREE = [
     {
         id: 6,
-        name: "Exames",
-        icon: "clipboard",
+        name: "Padrinho",
+        icon: "people",
         color: "bg-blue-active"
     },
     {
         id: 7,
-        name: "Carteira",
-        icon: "card",
+        name: "Cartão",
+        icon: "finger-print",
         color: "bg-blue-active"
     },
     {
         id: 8,
-        name: "Profissional",
-        icon: "briefcase",
+        name: "Médico",
+        icon: "git-network",
         color: "bg-blue-active"
     }
 ];
@@ -1160,7 +1170,9 @@ var TRIPSTHREE = [
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_trips_trips__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_login_login__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_comunity_comunity__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_local_weather_local_weather__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_award_award__ = __webpack_require__(303);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_local_weather_local_weather__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_daily_feeling_daily_feeling__ = __webpack_require__(302);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1170,6 +1182,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
+
 
 
 
@@ -1189,15 +1203,15 @@ var MyApp = /** @class */ (function () {
         this.initializeApp();
         this.appMenuItems = [
             { title: 'Home', component: __WEBPACK_IMPORTED_MODULE_5__pages_trips_trips__["a" /* TripsPage */], icon: 'home' },
+            { title: 'Daily', component: __WEBPACK_IMPORTED_MODULE_9__pages_local_weather_local_weather__["a" /* LocalWeatherPage */], icon: 'sunny' },
+            { title: 'Padrinho', component: __WEBPACK_IMPORTED_MODULE_9__pages_local_weather_local_weather__["a" /* LocalWeatherPage */], icon: 'sunny' },
             { title: 'Comunidade', component: __WEBPACK_IMPORTED_MODULE_7__pages_comunity_comunity__["a" /* ComunityPage */], icon: 'people' },
-            { title: 'Agendamento', component: __WEBPACK_IMPORTED_MODULE_8__pages_local_weather_local_weather__["a" /* LocalWeatherPage */], icon: 'calendar' },
-            { title: 'Exames', component: __WEBPACK_IMPORTED_MODULE_8__pages_local_weather_local_weather__["a" /* LocalWeatherPage */], icon: 'list' },
-            { title: 'Daily', component: __WEBPACK_IMPORTED_MODULE_8__pages_local_weather_local_weather__["a" /* LocalWeatherPage */], icon: 'sunny' },
-            { title: 'Clínica', component: __WEBPACK_IMPORTED_MODULE_8__pages_local_weather_local_weather__["a" /* LocalWeatherPage */], icon: 'medkit' },
-            { title: 'Prêmio', component: __WEBPACK_IMPORTED_MODULE_8__pages_local_weather_local_weather__["a" /* LocalWeatherPage */], icon: 'trophy' },
-            { title: 'Profissional', component: __WEBPACK_IMPORTED_MODULE_8__pages_local_weather_local_weather__["a" /* LocalWeatherPage */], icon: 'body' },
-            { title: 'Dados Pessoais', component: __WEBPACK_IMPORTED_MODULE_8__pages_local_weather_local_weather__["a" /* LocalWeatherPage */], icon: 'person' },
-            { title: 'Carteira Digital', component: __WEBPACK_IMPORTED_MODULE_8__pages_local_weather_local_weather__["a" /* LocalWeatherPage */], icon: 'paper' }
+            { title: 'Prêmio', component: __WEBPACK_IMPORTED_MODULE_8__pages_award_award__["a" /* AwardPage */], icon: 'trophy' },
+            { title: 'Agendamento', component: __WEBPACK_IMPORTED_MODULE_9__pages_local_weather_local_weather__["a" /* LocalWeatherPage */], icon: 'calendar' },
+            { title: 'Clínica', component: __WEBPACK_IMPORTED_MODULE_9__pages_local_weather_local_weather__["a" /* LocalWeatherPage */], icon: 'medkit' },
+            { title: 'Profissional', component: __WEBPACK_IMPORTED_MODULE_9__pages_local_weather_local_weather__["a" /* LocalWeatherPage */], icon: 'body' },
+            { title: 'Carteira Digital', component: __WEBPACK_IMPORTED_MODULE_9__pages_local_weather_local_weather__["a" /* LocalWeatherPage */], icon: 'paper' },
+            { title: 'Daily', component: __WEBPACK_IMPORTED_MODULE_10__pages_daily_feeling_daily_feeling__["a" /* DailyFeelingPage */], icon: 'calendar' }
         ];
     }
     MyApp.prototype.initializeApp = function () {
@@ -1377,6 +1391,101 @@ var topics = [
 
 /***/ }),
 
+/***/ 302:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DailyFeelingPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the DailyFeelingPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var DailyFeelingPage = /** @class */ (function () {
+    function DailyFeelingPage(nav, navParams) {
+        this.nav = nav;
+        this.navParams = navParams;
+    }
+    DailyFeelingPage_1 = DailyFeelingPage;
+    DailyFeelingPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad DailyFeelingPage');
+    };
+    DailyFeelingPage.prototype.daily = function () {
+        this.nav.setRoot(DailyFeelingPage_1);
+    };
+    DailyFeelingPage = DailyFeelingPage_1 = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'page-daily-feeling',template:/*ion-inline-start:"C:\Users\kaio.souza\Documents\tuberculoseSUS\src\pages\daily-feeling\daily-feeling.html"*/'<!-- -->\n\n<ion-header>\n\n  <ion-navbar color="primary">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>\n\n      <strong>Home</strong> \n\n    </ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button tappable (click)="presentNotifications($event)">\n\n        <ion-icon name="mail"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding class="trips detail-bg">\n\n  <ion-title>\n\n      <div class="ion-text-center">\n\n        <strong>Sua Jornada</strong> \n\n      </div>\n\n    </ion-title>\n\n  <progress-bar [progress]="25" [color-degraded]="{\'0\': \'#55cb00\',  \'15\': \'#55cb00\', \'25\': \'#55cb00\'}"> </progress-bar>\n\n<!--list of trips-->\n\n<ion-grid>\n\n  <ion-row>\n\n    <ion-col>\n\n      <div class="trip card" *ngFor="let trip of trips" tappable (click)="viewDetail(trip.id)" margin-bottom>\n\n        <div class="background border-bottom" [ngStyle]="{\'background-image\': \'url(\' + trip.thumb + \')\'}">\n\n          <div class="background-filter rlt">\n\n            <div class="align-bottom" padding-left padding-right>\n\n              <h6 class="pull-left text-white" ion-text>{{ trip.name }}</h6>\n\n              <div class="clear"></div>\n\n            </div>\n\n          </div>\n\n        </div>\n\n      </div>\n\n    </ion-col>\n\n    <ion-col>\n\n        <div class="trip card" *ngFor="let trip of tripsTwo" tappable (click)="viewDetail(trip.id)" margin-bottom>\n\n            <div class="background border-bottom" [ngStyle]="{\'background-image\': \'url(\' + trip.thumb + \')\'}">\n\n              <div class="background-filter rlt">\n\n                <div class="align-bottom" padding-left padding-right>\n\n                  <h6 class="pull-left text-white" ion-text>{{ trip.name }}</h6>\n\n                  <div class="clear"></div>\n\n                </div>\n\n              </div>\n\n            </div>\n\n          </div>\n\n    </ion-col>\n\n  </ion-row>\n\n</ion-grid>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\kaio.souza\Documents\tuberculoseSUS\src\pages\daily-feeling\daily-feeling.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    ], DailyFeelingPage);
+    return DailyFeelingPage;
+    var DailyFeelingPage_1;
+}());
+
+//# sourceMappingURL=daily-feeling.js.map
+
+/***/ }),
+
+/***/ 303:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AwardPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the AwardPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var AwardPage = /** @class */ (function () {
+    function AwardPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    AwardPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad AwardPage');
+    };
+    AwardPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'page-award',template:/*ion-inline-start:"C:\Users\kaio.souza\Documents\tuberculoseSUS\src\pages\award\award.html"*/'<!--\n\n  Generated template for the AwardPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Prêmios</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\kaio.souza\Documents\tuberculoseSUS\src\pages\award\award.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    ], AwardPage);
+    return AwardPage;
+}());
+
+//# sourceMappingURL=award.js.map
+
+/***/ }),
+
 /***/ 53:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1513,6 +1622,7 @@ var TripsPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trips_trips__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__register_register__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__daily_feeling_daily_feeling__ = __webpack_require__(302);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1522,6 +1632,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -1580,9 +1691,12 @@ var LoginPage = /** @class */ (function () {
         });
         forgot.present();
     };
+    LoginPage.prototype.daily = function () {
+        this.nav.push(__WEBPACK_IMPORTED_MODULE_4__daily_feeling_daily_feeling__["a" /* DailyFeelingPage */]);
+    };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"C:\Users\kaio.souza\Documents\tuberculoseSUS\src\pages\login\login.html"*/'<!-- -->\n\n<ion-content padding class="animated fadeIn login auth-page">\n\n  <div class="login-content">\n\n\n\n    <!-- Logo -->\n\n    <div padding-horizontal text-center class="animated fadeInDown">\n\n      <div class="logo"></div>\n\n      <h2 ion-text class="text-primary">\n\n        <strong>Tuberculose App</strong> Tuberculose App\n\n      </h2>\n\n    </div>\n\n\n\n    <!-- Login form -->\n\n    <form class="list-form">\n\n      <ion-item>\n\n        <ion-label floating>\n\n          <ion-icon name="mail" item-start class="text-primary"></ion-icon>\n\n          Carteira Nacional de Saúde\n\n        </ion-label>\n\n        <ion-input type="number"></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n        <ion-label floating>\n\n          <ion-icon name="lock" item-start class="text-primary"></ion-icon>\n\n          Senha\n\n        </ion-label>\n\n        <ion-input type="password"></ion-input>\n\n      </ion-item>\n\n    </form>\n\n\n\n    <p text-right ion-text color="secondary" tappable (click)="forgotPass()"><strong>Esqueceu sua Senha?</strong></p>\n\n\n\n    <div>\n\n      <button ion-button icon-start block color="dark" tappable (click)="login()">\n\n        <ion-icon name="log-in"></ion-icon>\n\n        Logar\n\n      </button>\n\n\n\n    </div>\n\n\n\n\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\kaio.souza\Documents\tuberculoseSUS\src\pages\login\login.html"*/
+            selector: 'page-login',template:/*ion-inline-start:"C:\Users\kaio.souza\Documents\tuberculoseSUS\src\pages\login\login.html"*/'<!-- -->\n\n<ion-content padding class="animated fadeIn login auth-page">\n\n  <div class="login-content">\n\n\n\n    <!-- Logo -->\n\n    <div padding-horizontal text-center class="animated fadeInDown">\n\n      <div class="logo"></div>\n\n      <h2 ion-text class="text-primary">\n\n        <strong>Tuberculose App</strong> Tuberculose App\n\n      </h2>\n\n    </div>\n\n\n\n    <!-- Login form -->\n\n    <form class="list-form">\n\n      <ion-item>\n\n        <ion-label floating>\n\n          <ion-icon name="mail" item-start class="text-primary"></ion-icon>\n\n          Carteira Nacional de Saúde\n\n        </ion-label>\n\n        <ion-input type="number"></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n        <ion-label floating>\n\n          <ion-icon name="lock" item-start class="text-primary"></ion-icon>\n\n          Senha\n\n        </ion-label>\n\n        <ion-input type="password"></ion-input>\n\n      </ion-item>\n\n    </form>\n\n\n\n    <p text-right ion-text color="secondary" tappable (click)="forgotPass()"><strong>Esqueceu sua Senha?</strong></p>\n\n\n\n    <div>\n\n      <button ion-button icon-start block color="dark" tappable (click)="login()">\n\n        <ion-icon name="log-in"></ion-icon>\n\n        Logar\n\n      </button>\n\n\n\n    </div>\n\n\n\n    <div>\n\n      <button (click)="daily()">\n\n          Daily Test\n\n      </button>\n\n    </div>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\kaio.souza\Documents\tuberculoseSUS\src\pages\login\login.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* MenuController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ToastController */]])
     ], LoginPage);

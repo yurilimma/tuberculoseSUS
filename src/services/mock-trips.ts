@@ -37,20 +37,20 @@ export let TRIPSTWO = [
 export let TRIPSTHREE = [
   {
     id: 6,
-    name: "Exames",
-    icon: "clipboard",
+    name: "Padrinho",
+    icon: "people",
     color: "bg-blue-active"
   },
   {
     id: 7,
-    name: "Carteira",
-    icon: "card",
+    name: "Cartão",
+    icon: "finger-print",
     color: "bg-blue-active"
   },
   {
     id: 8,
-    name: "Profissional",
-    icon: "briefcase",
+    name: "Médico",
+    icon: "git-network",
     color: "bg-blue-active"
   }
 ]
