@@ -24,6 +24,8 @@ import {TripDetailPage} from "../pages/trip-detail/trip-detail";
 import {TripsPage} from "../pages/trips/trips";
 import {LocalWeatherPage} from "../pages/local-weather/local-weather";
 import {GodfatherPage} from "../pages/godfather/godfather";
+import {ClinicPage} from "../pages/clinic/clinic";
+
 
 
 
@@ -74,7 +76,8 @@ import{DailyFeelingPage} from "../pages/daily-feeling/daily-feeling";
     CommunityNetPage,
     ListItemComponent,
     TubercususFooterComponent,
-    GodfatherPage
+    GodfatherPage,
+    ClinicPage
   ],
   imports: [
     BrowserModule,
@@ -114,7 +117,8 @@ import{DailyFeelingPage} from "../pages/daily-feeling/daily-feeling";
     CommunityNetPage,
     ListItemComponent,
     TubercususFooterComponent,
-    GodfatherPage
+    GodfatherPage,
+    ClinicPage
   ],
   providers: [
     StatusBar,

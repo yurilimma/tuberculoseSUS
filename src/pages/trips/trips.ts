@@ -1,10 +1,8 @@
 import {Component} from "@angular/core";
 import {NavController, PopoverController} from "ionic-angular";
 import {MenuService} from "../../services/menu-service";
-import {TripDetailPage} from "../trip-detail/trip-detail";
 import {NotificationsPage} from "../notifications/notifications";
 import {SettingsPage} from "../settings/settings";
-import { ComunityPage } from "../comunity/comunity";
 
 @Component({
   selector: 'page-trips',

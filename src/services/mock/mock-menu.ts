@@ -1,5 +1,7 @@
 import {GodfatherPage} from "../../pages/godfather/godfather";
 import { ComunityPage } from "../../pages/comunity/comunity";
+import { ClinicPage } from "../../pages/clinic/clinic";
+
 
 
 export let MENU = [
@@ -30,7 +32,8 @@ export let MENU = [
     name: "Clínica",
     icon: "medkit",
     color: "bg-blue-active",
-    line: 2
+    line: 2,
+    component: ClinicPage
   },
   {
     id: 2,

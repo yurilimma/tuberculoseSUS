@@ -49,7 +49,7 @@
     "ionic": "3.19.0",
     "typescript": "2.3.4"
   },
-  "description": "Ionic 3 Start Theme",
+  "description": "Tuberc App",
   "cordovaPlugins": [],
   "cordovaPlatforms": [],
   "cordova": {
