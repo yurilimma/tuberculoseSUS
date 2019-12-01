@@ -14,20 +14,17 @@ import {WeatherProvider} from "../services/weather";
 import {MyApp} from "./app.component";
 
 import {SettingsPage} from "../pages/settings/settings";
-import {CheckoutTripPage} from "../pages/checkout-trip/checkout-trip";
-import {HomePage} from "../pages/home/home";
 import {LoginPage} from "../pages/login/login";
 import {NotificationsPage} from "../pages/notifications/notifications";
 import {RegisterPage} from "../pages/register/register";
 import {SearchLocationPage} from "../pages/search-location/search-location";
-import {TripDetailPage} from "../pages/trip-detail/trip-detail";
 import {TripsPage} from "../pages/trips/trips";
-import {LocalWeatherPage} from "../pages/local-weather/local-weather";
 import {GodfatherPage} from "../pages/godfather/godfather";
 import {ClinicPage} from "../pages/clinic/clinic";
 import {AwardPage} from "../pages/award/award";
 import {SchedulePage} from "../pages/schedule/schedule";
 import {ProfissionalPage} from "../pages/profissional/profissional";
+import {PessoalCardPage} from "../pages/pessoal-card/pessoal-card";
 
 
 
@@ -66,14 +63,10 @@ import { AddTopicPage } from "../pages/add-topic/add-topic";
   declarations: [
     MyApp,
     SettingsPage,
-    CheckoutTripPage,
-    HomePage,
     LoginPage,
-    LocalWeatherPage,
     NotificationsPage,
     RegisterPage,
     SearchLocationPage,
-    TripDetailPage,
     TripsPage,
     ComunityPage,
     DashboardButtonComponent,
@@ -89,6 +82,8 @@ import { AddTopicPage } from "../pages/add-topic/add-topic";
     SchedulePage,
     ProfissionalPage,
     AddTopicPage
+    DailyFeelingPage,
+    PessoalCardPage
   ],
   imports: [
     BrowserModule,
@@ -111,14 +106,10 @@ import { AddTopicPage } from "../pages/add-topic/add-topic";
   entryComponents: [
     MyApp,
     SettingsPage,
-    CheckoutTripPage,
-    HomePage,
     LoginPage,
-    LocalWeatherPage,
     NotificationsPage,
     RegisterPage,
     SearchLocationPage,
-    TripDetailPage,
     TripsPage,
     ComunityPage,
     DashboardButtonComponent,
@@ -134,6 +125,8 @@ import { AddTopicPage } from "../pages/add-topic/add-topic";
     SchedulePage,
     ProfissionalPage,
     AddTopicPage
+    DailyFeelingPage,
+    PessoalCardPage
   ],
   providers: [
     StatusBar,

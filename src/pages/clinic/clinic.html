@@ -1,36 +1,53 @@
 <style>
-  a {
-    color: white !important;
-  }
-</style>
-
-<ion-header>
-
-</ion-header>
-
-<ion-content padding class="detail-bg">
-  <ion-grid>
-    <ion-row>
-      <div class="pull-left" style="font-size: 2em; color:black;">
-        <p>
-          <ion-icon name="medkit" style="padding:10px"></ion-icon><strong>Clínica</strong>
-          <img class="img-sus-logo pull-right" src="../../assets/img/sus-logo.png" alt="sus-logo">
-        </p>
-      </div>   
-    </ion-row>
-    <!-- </ion-row> -->
-  </ion-grid>
-
-  <div class="box box-widget widget-user">
-    <!-- Add the bg color to the header using any of the bg-* classes -->
-    <div class="widget-user-header bg-aqua-active">
-      <h3 class="widget-user-username">Hospital Municipal Xpto</h3>
-    </div>
-    <div class="widget-user-image">
-      <img class="img-circle" src="../../assets/img/hospital.jpeg" alt="User Avatar">
-    </div>
-
-
+    a {
+      color: white !important;
+    }
+  </style>
+  
+  <ion-header>
+  
+  </ion-header>
+  
+  <ion-content padding class="detail-bg">
+    <ion-grid>
+      <ion-row>
+        <div class="pull-left" style="font-size: 2em; color:black;">
+          <p>
+            <ion-icon name="medkit" style="padding:10px"></ion-icon>
+            <strong>Clínica</strong>
+            <img class="img-sus-logo pull-right" src="../../assets/img/sus-logo.png" alt="sus-logo">
+          </p>
+        </div>
+      </ion-row>
+      <!-- </ion-row> -->
+    </ion-grid>
+  
+    <!-- <div class="box box-widget widget-user">
+      <div class="widget-user-header bg-aqua-active">
+        <h3 class="widget-user-username">Padrinho Oliveira</h3>
+      </div>
+      <div class="widget-user-image">
+        <img class="img-circle" src="../../assets/img/avatar.jpeg" alt="User Avatar">
+      </div>
+    </div> -->
+    <ion-grid>
+      <ion-row class="bg-aqua-active border-radius-2 margin5">
+        <ion-col>
+          <ion-label><img class="img-circle" src="../../assets/img/hospital.jpeg" alt="User Avatar"></ion-label>
+          <ion-label class="widget-user-username">Hospital Municipal Xpto</ion-label>        
+        </ion-col>
+      </ion-row>
+      <ion-row class="margin5">
+          <ion-col class="pull-right">
+            <p style="text-align: justify; color:black;">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+              standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+              type specimen book.
+            </p>
+          </ion-col>
+      </ion-row>
+    </ion-grid>
+    
     <div class="row">
         <div class="col-md-10 pull-left" style="font-size: 15pt; color:black;">
         
@@ -91,10 +108,7 @@
             </p>
           </div>      
       </div>
-   
-
-  </div>
   
-<tubercusus-footer></tubercusus-footer>
-
-</ion-content>
+  </ion-content>
+  
+  <tubercusus-footer></tubercusus-footer>
