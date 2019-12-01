@@ -38,14 +38,13 @@ export class MyApp {
 
     this.appMenuItems = [
       {title: 'Home', component: TripsPage, icon: 'home'},
-      {title: 'Comunidade', component: ComunityPage, icon: 'people'},
-      {title: 'Agendamento', component: LocalWeatherPage, icon: 'calendar'},
-      {title: 'Exames', component: LocalWeatherPage, icon: 'list'},
       {title: 'Daily', component: LocalWeatherPage, icon: 'sunny'},
-      {title: 'Clínica', component: LocalWeatherPage, icon: 'medkit'},
+      {title: 'Padrinho', component: LocalWeatherPage, icon: 'sunny'},
+      {title: 'Comunidade', component: ComunityPage, icon: 'people'},
       {title: 'Prêmio', component: LocalWeatherPage, icon: 'trophy'},
+      {title: 'Agendamento', component: LocalWeatherPage, icon: 'calendar'},
+      {title: 'Clínica', component: LocalWeatherPage, icon: 'medkit'},
       {title: 'Profissional', component: LocalWeatherPage, icon: 'body'},
-      {title: 'Dados Pessoais', component: LocalWeatherPage, icon: 'person'},
       {title: 'Carteira Digital', component: LocalWeatherPage, icon: 'paper'}
 
     ];

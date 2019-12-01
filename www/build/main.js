@@ -789,6 +789,21 @@ var TRIPS = [
 var TRIPSTWO = [
     {
         id: 5,
+        name: "Padrinho",
+        price_adult: 500,
+        price_child: 250,
+        time: "24h",
+        free_cancellation: 1,
+        electric_voucher: 1,
+        sub_name: "English Commentary Tour",
+        thumb: "assets/img/trip/thumb/godfather.png",
+        description: "From sexy Ipanema and Copacabana, to more secluded and slightly lesser-known stretches of sand, like Prainha Beach, Brazil's Rio de Janeiro is best known for its beaches. Grab your sunscreen and Brazilian bikinis and head to the sunny shores of Rio's best beaches.",
+        location: "Fernando de Noronha, Brazil",
+        images: [],
+        highlights: []
+    },
+    {
+        id: 6,
         name: "Comunidade",
         price_adult: 500,
         price_child: 250,
@@ -803,23 +818,8 @@ var TRIPSTWO = [
         highlights: []
     },
     {
-        id: 6,
-        name: "Exames",
-        price_adult: 500,
-        price_child: 250,
-        time: "24h",
-        free_cancellation: 1,
-        electric_voucher: 1,
-        sub_name: "English Commentary Tour",
-        thumb: "assets/img/trip/thumb/exams.png",
-        description: "From sexy Ipanema and Copacabana, to more secluded and slightly lesser-known stretches of sand, like Prainha Beach, Brazil's Rio de Janeiro is best known for its beaches. Grab your sunscreen and Brazilian bikinis and head to the sunny shores of Rio's best beaches.",
-        location: "Fernando de Noronha, Brazil",
-        images: [],
-        highlights: []
-    },
-    {
         id: 7,
-        name: "Carteira",
+        name: "Carteira Digital",
         price_adult: 500,
         price_child: 250,
         time: "24h",
@@ -894,14 +894,13 @@ var MyApp = (function () {
         this.initializeApp();
         this.appMenuItems = [
             { title: 'Home', component: __WEBPACK_IMPORTED_MODULE_5__pages_trips_trips__["a" /* TripsPage */], icon: 'home' },
-            { title: 'Comunidade', component: __WEBPACK_IMPORTED_MODULE_7__pages_comunity_comunity__["a" /* ComunityPage */], icon: 'people' },
-            { title: 'Agendamento', component: __WEBPACK_IMPORTED_MODULE_8__pages_local_weather_local_weather__["a" /* LocalWeatherPage */], icon: 'calendar' },
-            { title: 'Exames', component: __WEBPACK_IMPORTED_MODULE_8__pages_local_weather_local_weather__["a" /* LocalWeatherPage */], icon: 'list' },
             { title: 'Daily', component: __WEBPACK_IMPORTED_MODULE_8__pages_local_weather_local_weather__["a" /* LocalWeatherPage */], icon: 'sunny' },
-            { title: 'Clínica', component: __WEBPACK_IMPORTED_MODULE_8__pages_local_weather_local_weather__["a" /* LocalWeatherPage */], icon: 'medkit' },
+            { title: 'Padrinho', component: __WEBPACK_IMPORTED_MODULE_8__pages_local_weather_local_weather__["a" /* LocalWeatherPage */], icon: 'sunny' },
+            { title: 'Comunidade', component: __WEBPACK_IMPORTED_MODULE_7__pages_comunity_comunity__["a" /* ComunityPage */], icon: 'people' },
             { title: 'Prêmio', component: __WEBPACK_IMPORTED_MODULE_8__pages_local_weather_local_weather__["a" /* LocalWeatherPage */], icon: 'trophy' },
+            { title: 'Agendamento', component: __WEBPACK_IMPORTED_MODULE_8__pages_local_weather_local_weather__["a" /* LocalWeatherPage */], icon: 'calendar' },
+            { title: 'Clínica', component: __WEBPACK_IMPORTED_MODULE_8__pages_local_weather_local_weather__["a" /* LocalWeatherPage */], icon: 'medkit' },
             { title: 'Profissional', component: __WEBPACK_IMPORTED_MODULE_8__pages_local_weather_local_weather__["a" /* LocalWeatherPage */], icon: 'body' },
-            { title: 'Dados Pessoais', component: __WEBPACK_IMPORTED_MODULE_8__pages_local_weather_local_weather__["a" /* LocalWeatherPage */], icon: 'person' },
             { title: 'Carteira Digital', component: __WEBPACK_IMPORTED_MODULE_8__pages_local_weather_local_weather__["a" /* LocalWeatherPage */], icon: 'paper' }
         ];
     }
