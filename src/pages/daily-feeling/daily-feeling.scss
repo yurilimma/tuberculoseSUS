@@ -1,0 +1,19 @@
+page-daily-feeling 
+  .daily {
+    ion-list {
+      border-radius: 1rem;
+      overflow: hidden;
+  
+      ion-item,
+      .item:first-child,
+      .item:last-child {
+        border: none;
+      }
+  
+      ion-datetime {
+        padding-left: 0;
+      }
+    }
+  }
+  
+
