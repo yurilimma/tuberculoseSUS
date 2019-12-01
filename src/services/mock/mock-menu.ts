@@ -1,6 +1,10 @@
 import {GodfatherPage} from "../../pages/godfather/godfather";
 import { ComunityPage } from "../../pages/comunity/comunity";
 import { ClinicPage } from "../../pages/clinic/clinic";
+import { AwardPage } from "../../pages/award/award";
+import { SchedulePage } from "../../pages/schedule/schedule";
+
+
 
 
 
@@ -25,7 +29,8 @@ export let MENU = [
     name: "Conquistas",
     icon: "trophy",
     color: "bg-blue-active",
-    line: 2
+    line: 2,
+    component: AwardPage
   },
   {
     id: 4,
@@ -40,7 +45,8 @@ export let MENU = [
     name: "Agendamento",
     icon: "alarm",
     color: "bg-blue-active",
-    line: 2
+    line: 2,
+    component: SchedulePage
   },  
   {
     id: 6,

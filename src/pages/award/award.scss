@@ -34,14 +34,50 @@ ion-toolbar {
     }
 }
 
-.experience {
+.img-experience {
     width: 400px;
-    height: 400px;
+    height: 350px;
+    position: relative;
+    margin: 30px;
+    margin-top: -145px;
+    margin-left: 280px;
+
+    img {
+        display: block;
+    }
+}
+
+.img-patrocinio1 {
+    width: 100px;
+    height: 150px;
+    position: relative;
+    margin: 30px;
+    margin-top: -160px;
+    margin-left: 320px;
+
+    img {
+        display: block;
+    }
+}
+.img-patrocinio2 {
+    width: 100px;
+    height: 150px;
     position: relative;
     margin: 30px;
     margin-top: -200px;
-    margin-left: 100px;
+    margin-left: 200px;
 
+    img {
+        display: block;
+    }
+}
+.img-patrocinio3 {
+    width: 100px;
+    height: 150px;
+    position: relative;
+    margin: 30px;
+    margin-top: -245px;
+    margin-left: 80px;
 
     img {
         display: block;

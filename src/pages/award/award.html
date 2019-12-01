@@ -1,36 +1,66 @@
-<!-- -->
-<ion-header>
-    <ion-navbar color="primary">
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-      <ion-title>
-        <strong>Prêmios</strong> 
-      </ion-title>
-      <ion-buttons end>
-        <button ion-button tappable (click)="presentNotifications($event)">
-          <ion-icon name="mail"></ion-icon>
-        </button>
-      </ion-buttons>
-    </ion-navbar>
+<style>
+    a {
+      color: white !important;
+    }
+  </style>
+  
+  <ion-header>
+  
   </ion-header>
   
-  <ion-content fullscreen="true" slot="fixed" >
-    
-
-    <div class="card">
-        <div class="header">
-          <div class="avatar">
-            <img src="../../assets/img/avatar.jpeg" alt="">
-          </div>
-          
+  <ion-content padding class="detail-bg">
+    <ion-grid>
+      <ion-row>
+        <div class="pull-left" style="font-size: 2em; color:black;">
+          <p>
+            <ion-icon name="trophy" style="padding:10px"></ion-icon><strong>Conquistas</strong>
+          </p>
         </div>
-    </div>
-      <h2 ion-text class="no-margin bold text-black" style="margin-top: 250px; margin-left: 20px;">
-          João Firmino
-      </h2>
-
-      <div class="experience">
-          <img src="../../assets/img/experience.png" alt="">
+        <div class="pull-right">
+            <img class="img-sus-logo" src="../../assets/img/sus-logo.png" alt="sus-logo">
+         </div>    
+      </ion-row>
+      <!-- </ion-row> -->
+    </ion-grid>
+  
+    <div class="box box-widget widget-user">
+      <!-- Add the bg color to the header using any of the bg-* classes -->
+      <div class="widget-user-header bg-aqua-active">
+        <h3 class="widget-user-username">Fulano Silva</h3>
       </div>
+      <div class="widget-user-image">
+        <img class="img-circle" src="../../assets/dist/img/user1-128x128.jpg" alt="User Avatar">
+      </div>
+  
+  
+     
+     <div>
+        <img class="img-experience" src="../../assets/img/experience.png" alt="experience">
+     </div>
+     
+     
+     <div>
+        <img class="img-patrocinio1" src="../../assets/img/patrocinador.png" alt="patrocinador">
+     </div>  
+     <div>
+        <img class="img-patrocinio2" src="../../assets/img/patrocinador.png" alt="patrocinador">
+     </div>
+     <div>
+        <img class="img-patrocinio3" src="../../assets/img/patrocinador.png" alt="patrocinador">
+     </div>
+
+     <div class="row">
+        <div class="col-md-10 pull-left" style="font-size: 15pt; color:black;">
+            <ion-icon ios="ios-help" md="md-help" tooltip="Para ganhar mais pontos é necessário assistir a vídeos produzidos pela fiocruz, frequentar a eventos e palestras sobre o tema tuberculose" navTooltip></ion-icon>
+        </div>
+        <div class="col-md-10 pull-right" style="font-size: 15pt; color:black;">
+            Como ganhar mais pontos
+            <ion-icon ios="ios-help" md="md-help" tooltip="Para ganhar mais pontos é necessário assistir a vídeos produzidos pela fiocruz, frequentar a eventos e palestras sobre o tema tuberculose" navTooltip></ion-icon>
+
+        </div>
+   </div>  
+    </div>
+    
+  <tubercusus-footer></tubercusus-footer>
+  
   </ion-content>
