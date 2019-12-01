@@ -26,8 +26,8 @@ import {TripsPage} from "../pages/trips/trips";
 import {LocalWeatherPage} from "../pages/local-weather/local-weather";
 
 
-import {ProgressBarModule} from "angular-progress-bar"
-
+import {ProgressBarModule} from "angular-progress-bar";
+import{DailyFeelingPage} from "../pages/daily-feeling/daily-feeling";
 
 // import services
 // end import services
@@ -49,7 +49,7 @@ import {ProgressBarModule} from "angular-progress-bar"
     SearchLocationPage,
     TripDetailPage,
     TripsPage,
-    
+    DailyFeelingPage
   ],
   imports: [
     BrowserModule,
@@ -78,7 +78,8 @@ import {ProgressBarModule} from "angular-progress-bar"
     RegisterPage,
     SearchLocationPage,
     TripDetailPage,
-    TripsPage
+    TripsPage,
+    DailyFeelingPage
   ],
   providers: [
     StatusBar,

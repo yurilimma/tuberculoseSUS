@@ -10,6 +10,7 @@ import { LoginPage } from "../pages/login/login";
 import { ComunityPage } from "../pages/comunity/comunity";
 
 import { LocalWeatherPage } from "../pages/local-weather/local-weather";
+import {DailyFeelingPage} from "../pages/daily-feeling/daily-feeling";
 
 export interface MenuItem {
     title: string;
@@ -46,8 +47,8 @@ export class MyApp {
       {title: 'Prêmio', component: LocalWeatherPage, icon: 'trophy'},
       {title: 'Profissional', component: LocalWeatherPage, icon: 'body'},
       {title: 'Dados Pessoais', component: LocalWeatherPage, icon: 'person'},
-      {title: 'Carteira Digital', component: LocalWeatherPage, icon: 'paper'}
-
+      {title: 'Carteira Digital', component: LocalWeatherPage, icon: 'paper'},
+      {title: 'Daily', component: DailyFeelingPage, icon: 'calendar'}
     ];
   }
 
