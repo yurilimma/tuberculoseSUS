@@ -1,6 +1,6 @@
 import {Component} from "@angular/core";
 import {NavController, PopoverController} from "ionic-angular";
-import {TripService} from "../../services/trip-service";
+import {MenuService} from "../../services/menu-service";
 import {TripDetailPage} from "../trip-detail/trip-detail";
 import {NotificationsPage} from "../notifications/notifications";
 import {SettingsPage} from "../settings/settings";
@@ -16,7 +16,7 @@ export class TripsPage {
   public tripsTwo: any;
   public tripsThree: any;
 
-  constructor(public nav: NavController, public tripService: TripService, public popoverCtrl: PopoverController) {
+  constructor(public nav: NavController, public tripService: MenuService, public popoverCtrl: PopoverController) {
     // set sample data
     this.trips = tripService.getAll();
     this.tripsTwo = tripService.getTripsTwoAll();

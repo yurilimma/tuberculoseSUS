@@ -8,8 +8,7 @@ import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {Keyboard} from '@ionic-native/keyboard';
 
-import {ActivityService} from "../services/activity-service";
-import {TripService} from "../services/trip-service";
+import {MenuService} from "../services/menu-service";
 import {WeatherProvider} from "../services/weather";
 
 import {MyApp} from "./app.component";
@@ -35,6 +34,8 @@ import { CommunityCalendarPage } from "../pages/community-calendar/community-cal
 import { CommunityNetPage } from "../pages/community-net/community-net";
 import { ListItemComponent } from "../components/list-item/list-item";
 import { TopicService } from "../services/topics-service";
+import { TubercususFooterComponent } from "../components/tubercusus-footer/tubercusus-footer";
+import { GameService } from "../services/game-service";
 
 
 // import services
@@ -63,7 +64,8 @@ import { TopicService } from "../services/topics-service";
     CommunityWarnPage,
     CommunityCalendarPage,
     CommunityNetPage,
-    ListItemComponent
+    ListItemComponent,
+    TubercususFooterComponent
   ],
   imports: [
     BrowserModule,
@@ -99,16 +101,17 @@ import { TopicService } from "../services/topics-service";
     CommunityWarnPage,
     CommunityCalendarPage,
     CommunityNetPage,
-    ListItemComponent
+    ListItemComponent,
+    TubercususFooterComponent
   ],
   providers: [
     StatusBar,
     SplashScreen,
     Keyboard,
-    ActivityService,
-    TripService,
+    MenuService,
     WeatherProvider,
-    TopicService
+    TopicService,
+    GameService
   ]
 })
 

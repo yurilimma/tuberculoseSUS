@@ -1,28 +1,14 @@
 import {Injectable} from "@angular/core";
-import {topics} from "./mock-topics";
+import {topics} from "./mock/mock-topics";
+import { CrudService } from "./base/crudservice";
 
 @Injectable()
-export class TopicService {
-  private topics: any;
+export class TopicService extends CrudService {
+  populateList(): void {
+    this.itemList = topics;
+  }
 
   constructor() {
-    this.topics = topics;
-  }
-
-  getAll() {
-    return this.topics;
-  }
-
-  getItem(id) {
-    for (var i = 0; i < this.topics.length; i++) {
-      if (this.topics[i].id === parseInt(id)) {
-        return this.topics[i];
-      }
-    }
-    return null;
-  }
-
-  remove(item) {
-    this.topics.splice(this.topics.indexOf(item), 1);
-  }
+    super();
+  }  
 }

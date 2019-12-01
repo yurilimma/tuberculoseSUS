@@ -21179,6 +21179,14 @@ ion-navbar.toolbar {
   font-family: "Roboto", "Helvetica Neue", sans-serif;
 }
 
+span.back-button-text.back-button-text-ios {
+  color: white !important;
+}
+
+.ion-icon-big {
+  font-size: 64px !important;
+}
+
 .primary-bg {
   background-color: #4c6df9 !important;
 }
@@ -21775,6 +21783,21 @@ ion-col {
 
 a {
   color: white !important;
+}
+
+page-daily-feeling .daily ion-list {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+page-daily-feeling .daily ion-list ion-item,
+page-daily-feeling .daily ion-list .item:first-child,
+page-daily-feeling .daily ion-list .item:last-child {
+  border: none;
+}
+
+page-daily-feeling .daily ion-list ion-datetime {
+  padding-left: 0;
 }
 
 page-home ion-list,

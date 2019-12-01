@@ -1,0 +1,20 @@
+<ion-footer>
+    <ion-navbar class="bg-white">
+      <button ion-button menuToggle>
+        <p>
+          <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+        </p>
+        <p>Retornar</p>
+      </button>
+      <ion-title style="color:blue">
+        <strong>TubercuSUS</strong>
+      </ion-title>
+      <ion-buttons end>
+        <button ion-button tappable (click)="presentNotifications($event)">
+          <p>
+            <ion-icon slot="icon-only" name="cog" style="font-size: 2em; margin-top: 50%;"></ion-icon>
+          </p>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+  </ion-footer>

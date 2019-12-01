@@ -13,6 +13,14 @@
   font-size: 100%;
   font-family:  "Roboto", "Helvetica Neue", sans-serif;
  }
+
+ span.back-button-text.back-button-text-ios{
+   color: white!important;
+ }
+
+ .ion-icon-big {
+  font-size: 64px!important;
+}
  
 .primary-bg {
   background-color: color($colors, primary) !important;

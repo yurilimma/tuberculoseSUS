@@ -1,42 +1,54 @@
 <style>
   a {
-    color: white!important;
+    color: white !important;
   }
 </style>
 
 <ion-header>
-  <ion-navbar color="primary">
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>
-      <strong>Comunidade</strong> 
-    </ion-title>
-    <ion-buttons end>
-      <button ion-button tappable (click)="presentNotifications($event)">
-        <ion-icon name="mail"></ion-icon>
-      </button>
-    </ion-buttons>
-  </ion-navbar>
+
 </ion-header>
 
 <ion-content padding class="detail-bg">
   <ion-grid>
-      <ion-row>
-        <ion-col>
-          <dashboard-button buttonLabel="Rede" buttonIcon="globe" color="bg-blue" (buttonClicked)="goToForum()"></dashboard-button>
-        </ion-col>
-        <ion-col>
-            <dashboard-button buttonLabel="Mito Ou Verdade?" buttonIcon="help" color="bg-blue" (buttonClicked)="goToGamefication()"></dashboard-button>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-          <ion-col>
-              <dashboard-button buttonLabel="Informe-se" buttonIcon="megaphone" color="bg-blue" (buttonClicked)="goToWarnings()"></dashboard-button>
-          </ion-col>
-          <ion-col>
-              <dashboard-button buttonLabel="Eventos" buttonIcon="calendar" color="bg-blue" (buttonClicked)="goToCalendar()"></dashboard-button>
-          </ion-col>
-        </ion-row>
-  </ion-grid>  
+    <ion-row>
+      <div class="pull-left" style="font-size: 2em; color:black;">
+        <p>
+          <ion-icon name="contacts" style="padding:10px"></ion-icon><strong>Comunidade</strong>
+        </p>
+      </div>
+    </ion-row>
+    <!-- <ion-row> -->
+    <ion-row>
+      <ion-col>
+        <dashboard-button buttonLabel="Rede" buttonIcon="globe" color="bg-blue" (buttonClicked)="goToForum()">
+        </dashboard-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+      <dashboard-button buttonLabel="Mito Ou Verdade?" buttonIcon="checkmark-circle-outline" color="bg-blue"
+        (buttonClicked)="goToGamefication()"></dashboard-button>
+      </ion-col>
+    </ion-row>
+    <!-- </ion-row>
+      <ion-row> -->
+    <ion-row>
+      <ion-col>
+      <dashboard-button buttonLabel="Informe-se" buttonIcon="megaphone" color="bg-blue"
+        (buttonClicked)="goToWarnings()"></dashboard-button>
+
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+      <dashboard-button buttonLabel="Eventos" buttonIcon="calendar" color="bg-blue" (buttonClicked)="goToCalendar()">
+      </dashboard-button>
+
+      </ion-col>
+    </ion-row>
+    <!-- </ion-row> -->
+  </ion-grid>
+  
+<tubercusus-footer></tubercusus-footer>
+
 </ion-content>

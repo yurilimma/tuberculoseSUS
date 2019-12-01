@@ -1,6 +1,6 @@
 import {Component} from "@angular/core";
 import {NavController} from "ionic-angular";
-import {TripService} from "../../services/trip-service";
+import {MenuService} from "../../services/menu-service";
 import {CheckoutTripPage} from "../checkout-trip/checkout-trip";
 
 @Component({
@@ -15,7 +15,7 @@ export class TripDetailPage {
   // number of children
   public children = 0;
 
-  constructor(public nav: NavController, public tripService: TripService) {
+  constructor(public nav: NavController, public tripService: MenuService) {
     // set sample data
     this.trip = tripService.getItem(1);
   }
