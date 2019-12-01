@@ -10,8 +10,6 @@ import { LoginPage } from "../pages/login/login";
 import { ComunityPage } from "../pages/comunity/comunity";
 import { AwardPage } from "../pages/award/award";
 
-
-import { LocalWeatherPage } from "../pages/local-weather/local-weather";
 import {DailyFeelingPage} from "../pages/daily-feeling/daily-feeling";
 
 export interface MenuItem {
@@ -41,14 +39,14 @@ export class MyApp {
 
     this.appMenuItems = [
       {title: 'Home', component: TripsPage, icon: 'home'},
-      {title: 'Daily', component: LocalWeatherPage, icon: 'sunny'},
-      {title: 'Padrinho', component: LocalWeatherPage, icon: 'sunny'},
+      {title: 'Daily', component: TripsPage, icon: 'sunny'},
+      {title: 'Padrinho', component: TripsPage, icon: 'sunny'},
       {title: 'Comunidade', component: ComunityPage, icon: 'people'},
       {title: 'Prêmio', component: AwardPage, icon: 'trophy'},
-      {title: 'Agendamento', component: LocalWeatherPage, icon: 'calendar'},
-      {title: 'Clínica', component: LocalWeatherPage, icon: 'medkit'},
-      {title: 'Profissional', component: LocalWeatherPage, icon: 'body'},
-      {title: 'Carteira Digital', component: LocalWeatherPage, icon: 'paper'},
+      {title: 'Agendamento', component: TripsPage, icon: 'calendar'},
+      {title: 'Clínica', component: TripsPage, icon: 'medkit'},
+      {title: 'Profissional', component: TripsPage, icon: 'body'},
+      {title: 'Carteira Digital', component: TripsPage, icon: 'paper'},
       {title: 'Daily', component: DailyFeelingPage, icon: 'calendar'}
     ];
   }
